@@ -1,0 +1,27 @@
+main:
+  - name: "Home"
+    url: "/"
+    weight: 2
+  - name: "Mission"
+    url: "/mission/"
+    weight: 3
+  - name: "Software"
+    url: "/software/"
+    weight: 4
+  - name: "Videos"
+    url: "/videos/"
+    weight: 5
+  - name: "Downloads"
+    url: "/downloads/"
+    weight: 6
+  - name: "Papers"
+    url: "/papers/"
+    weight: 7
+  - name: "Documentation"
+    url: "/documentation/"
+    weight: 8
+
+footer:
+  - name: "Home"
+    url: "/"
+    weight: 1

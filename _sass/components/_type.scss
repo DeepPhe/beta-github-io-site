@@ -1,0 +1,47 @@
+a {
+  color: $link-color;
+}
+p {
+  line-height: 26px;
+  color: #c4c4c4;
+  font-family: $font-family-base;
+  margin-bottom: 20px;
+}
+h1 {
+  font-size: 20px;
+  font-family: $font-family-heading;
+  line-height: 1.2;
+  margin-bottom: 20px;
+  @include media-breakpoint-up(md) {
+    font-size: 32px;
+    line-height: 1.2;
+  }
+}
+h2 {
+  color: #ffffff;
+  font-size: 24px;
+  font-family: $font-family-heading;
+  line-height: 1.4;
+  margin-bottom: 10px;
+  @include media-breakpoint-up(md) {
+    font-size: 26px;
+    line-height: 1.4;
+  }
+}
+h3 {
+  font-size: 16px;
+  line-height: 1.4;
+  @include media-breakpoint-up(md) {
+    font-size: 20px;
+    line-height: 1.4;
+  }
+}
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  li {
+    padding: 2px 2px 5px;
+    margin: 0;
+  }
+}

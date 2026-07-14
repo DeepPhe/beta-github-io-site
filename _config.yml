@@ -1,0 +1,55 @@
+baseurl: /
+permalink: pretty
+title: 'DeepPhe'
+
+google_analytics_id: "G-YRMX44NDH2"
+
+homepage:
+  show_call_box: false
+
+logo:
+  mobile: "images/logo/deepphe.png"
+  desktop: "images/logo/deepphe.png"
+  desktop_height: "36px"
+  logo_url: "/"
+
+footer:
+  copyright_text: 'Copyright 2021-23'
+  
+
+seo:
+  meta_og_title: "DeepPhe"
+  meta_og_type: "website"
+  meta_og_url: "https://"
+  meta_og_image: "https://"
+  meta_og_description: "A Natural Language Processing System for Extracting Cancer Phenotypes from Clinical Records"
+  meta_twitter_card: ""
+  meta_twitter_site: ""
+  meta_twitter_creator: ""
+
+collections:
+  services:
+    output: true
+  team:
+    output: true
+
+sass:
+  indentWidth: 4
+  style: compact # possible values: nested expanded compact compressed
+  precision: 10
+
+plugins:
+  - jekyll-environment-variables
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - node_modules
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - LICENSE.md
+  - LICENSE
+  - README.md
+  - todo.md

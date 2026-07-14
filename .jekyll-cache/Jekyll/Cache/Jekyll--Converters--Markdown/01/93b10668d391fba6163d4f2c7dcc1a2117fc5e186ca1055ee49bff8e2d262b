@@ -1,0 +1,9 @@
+I"p<p>The DeepPhe tool for Translational Research (DeepPhe-XN) builds upon the base DeepPhe platform to provide extensive information useful for translational cancer research. Results from processing are stored in a Neo4J database that can be utilized by DeepPhe-Viz.</p>
+
+<p>There is a <a href="https://github.com/DeepPhe/DeepPhe-Release/wiki">DeepPhe-XN WIKI</a> with information on installation and use.</p>
+
+<p>Supported by the <a href="https://www.cancer.gov">National Cancer Institute’s</a> 
+<a href="https://itcr.cancer.gov">Information Technology for Cancer Research (ITCR) initiative</a> 
+(Grant #U24CA248010).</p>
+
+:ET
