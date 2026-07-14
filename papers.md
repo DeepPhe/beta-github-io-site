@@ -3,6 +3,7 @@ title: Papers
 permalink: /papers/
 layout: papers
 description: DeepPhe publications, presentations, talks, and panels.
+extra_bottom_air: true
 extra_css:
   - /assets/css/publications.css
 extra_js:

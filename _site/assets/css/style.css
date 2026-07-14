@@ -4432,6 +4432,8 @@ readers do not read off random characters that represent icons */
 
 .section { border-radius: 15px; border-style: solid; border-color: #1E3047; margin-top: 50px; padding: 30px; background-color: #0C1826; }
 
+.section-with-bottom-air { padding-bottom: 64px; }
+
 .papers-section { padding-left: 50px; padding-right: 50px; }
 
 .documentation-groups { margin-top: 24px; }
