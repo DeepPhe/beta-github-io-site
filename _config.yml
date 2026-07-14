@@ -1,4 +1,4 @@
-baseurl: /
+baseurl: /beta-github-io-site
 permalink: pretty
 title: 'DeepPhe'
 
@@ -11,7 +11,7 @@ logo:
   mobile: "images/logo/deepphe.png"
   desktop: "images/logo/deepphe.png"
   desktop_height: "36px"
-  logo_url: "/"
+  logo_url: "/beta-github-io-site/"
 
 footer:
   copyright_text: 'Copyright 2021-23'
