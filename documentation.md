@@ -12,9 +12,13 @@ description: DeepPhe documentation guides for installation, desktop use, visuali
 <section class="documentation-section" aria-labelledby="documentation-get-started">
   <h2 id="documentation-get-started">Get started</h2>
   <div class="documentation-grid">
-    <a class="documentation-card" href="https://deepphe.github.io/installation/">
-      <span class="documentation-card-title">Installation Guide</span>
-      <span class="documentation-card-description">Install DeepPhe and understand how the installer lays out the local XN and Visualizer pieces.</span>
+    <a class="documentation-card" href="https://deepphe.github.io/installation/user/download">
+      <span class="documentation-card-title">DeepPhe User Guide</span>
+      <span class="documentation-card-description">Download DeepPhe and start using the installed XN and Visualizer pieces.</span>
+    </a>
+    <a class="documentation-card" href="https://deepphe.github.io/installation/getting-started/prerequisites">
+      <span class="documentation-card-title">DeepPhe Installer Guide</span>
+      <span class="documentation-card-description">Review prerequisites and setup steps for installer development and maintenance.</span>
     </a>
   </div>
 </section>

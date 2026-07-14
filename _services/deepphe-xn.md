@@ -10,6 +10,8 @@ The DeepPhe tool for Translational Research (DeepPhe-XN) builds upon the base De
 
 There is a [DeepPhe-XN WIKI](https://github.com/DeepPhe/DeepPhe-Release/wiki) with information on installation and use. 
 
+Documentation: [Installation Guide](https://deepphe.github.io/installation/), [Desktop GUI Guide](https://deepphe.github.io/dphe-gui/), and [DB Pipeline](https://deepphe.github.io/dphe-db-pipeline/) for loading DeepPhe-XN output into the database.
+
 Supported by the [National Cancer Institute's](https://www.cancer.gov) 
 [Information Technology for Cancer Research (ITCR) initiative](https://itcr.cancer.gov) 
 (Grant #U24CA248010).

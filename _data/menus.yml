@@ -8,17 +8,17 @@ main:
   - name: "Software"
     url: "/software/"
     weight: 4
-  - name: "Videos"
-    url: "/videos/"
-    weight: 5
   - name: "Downloads"
     url: "/downloads/"
-    weight: 6
-  - name: "Papers"
-    url: "/papers/"
-    weight: 7
+    weight: 5
   - name: "Documentation"
     url: "/documentation/"
+    weight: 6
+  - name: "Videos"
+    url: "/videos/"
+    weight: 7
+  - name: "Papers"
+    url: "/papers/"
     weight: 8
 
 footer:
