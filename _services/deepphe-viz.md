@@ -12,7 +12,9 @@ can be utilized with the
 which provides a web-based interface to data, supporting
 review of both cohorts and individual patient records. 
 
+See the [DeepPhe Visualizer User Guide](https://deepphe.github.io/DeepPhe-Visualizer-v2/)
+for installation and usage documentation.
+
 Supported by the [National Cancer Institute's](https://www.cancer.gov)
 [Information Technology for Cancer Research (ITCR) initiative](https://itcr.cancer.gov) 
 (Grant #U24CA248010).
-
