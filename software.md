@@ -4,13 +4,14 @@ layout: services
 intro_image: "images/deepphe-patient.png"
 intro_image_absolute: true
 intro_image_hide_on_mobile: false
-carousels:
-- images:
-    - image: /images/pipergui.png
-    - image: /images/viz1.png
-    - image: /images/viz2.png
-    - image: /images/viz3.png
-    - image: /images/viz4.png
+# TODO: Replace the outdated DeepPhe software carousel with current screenshots.
+# carousels:
+# - images:
+#     - image: /images/pipergui.png
+#     - image: /images/viz1.png
+#     - image: /images/viz2.png
+#     - image: /images/viz3.png
+#     - image: /images/viz4.png
 ---
 
 # DeepPhe Software
