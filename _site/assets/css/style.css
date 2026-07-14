@@ -5479,7 +5479,7 @@ ul li, ol li { padding: 2px 2px 5px; margin: 0; }
 
 .intro-small { padding-top: 100px; padding-bottom: 30px; }
 
-.intro-image { height: 300px; width: auto; margin-right: auto; margin-left: auto; margin-top: 50px; }
+.intro-image { display: block; width: 100%; max-width: 520px; height: auto; margin-right: auto; margin-left: auto; margin-top: 50px; border: 2px solid #1E3047; border-radius: 8px; }
 
 .intro-image-absolute { max-width: 400; padding: 50px; margin-bottom: 30px; }
 
