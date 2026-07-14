@@ -1,3 +1,4 @@
+url: "https://deepphe.github.io"
 baseurl: /beta-github-io-site
 permalink: pretty
 title: 'DeepPhe'
@@ -20,12 +21,9 @@ footer:
 seo:
   meta_og_title: "DeepPhe"
   meta_og_type: "website"
-  meta_og_url: "https://"
-  meta_og_image: "https://"
+  meta_og_image: "/images/logo/deepphe.png"
   meta_og_description: "A Natural Language Processing System for Extracting Cancer Phenotypes from Clinical Records"
-  meta_twitter_card: ""
-  meta_twitter_site: ""
-  meta_twitter_creator: ""
+  meta_twitter_card: "summary_large_image"
 
 collections:
   services:

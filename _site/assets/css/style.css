@@ -4432,6 +4432,28 @@ readers do not read off random characters that represent icons */
 
 .papers-section { padding-left: 50px; padding-right: 50px; }
 
+.documentation-groups { margin-top: 24px; }
+
+.documentation-section { margin-top: 32px; }
+
+.documentation-section:first-child { margin-top: 18px; }
+
+.documentation-section h2 { color: #ffffff; font-size: 1.6rem; margin-bottom: 16px; }
+
+.documentation-grid { display: grid; gap: 16px; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); }
+
+.documentation-card { display: block; min-height: 150px; padding: 22px; border: 2px solid rgba(127, 179, 213, 0.75); border-radius: 8px; background: #223550; color: #ffffff; text-decoration: none; transition: border-color 120ms ease, background-color 120ms ease, transform 120ms ease; }
+
+.documentation-card:hover, .documentation-card:focus { color: #ffffff; text-decoration: none; border-color: #87CEEB; background: #294465; transform: translateY(-2px); }
+
+.documentation-card:focus { outline: 3px solid #ffffff; outline-offset: 3px; }
+
+.documentation-card-title, .documentation-card-description { display: block; }
+
+.documentation-card-title { font-size: 1.2rem; font-weight: bold; margin-bottom: 10px; }
+
+.documentation-card-description { color: #e6e6e6; font-size: 1rem; line-height: 1.45; }
+
 #download-col-header { margin-left: 0px; margin-right: 0px; padding-left: 0px; padding-right: 0px; }
 
 .row > *, .row { padding: 0px; margin-left: 0px !important; margin-right: 0px !important; }
