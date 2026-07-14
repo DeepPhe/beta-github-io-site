@@ -1,6 +1,6 @@
 ---
 title: "DeepPhe-Viz"
-link: "https://github.com/DeepPhe/DeepPhe-Viz/releases/tag/v20220825" 
+link: "https://github.com/DeepPhe/DeepPhe-Visualizer-v2" 
 featured: true
 weight: 3
 layout: service
@@ -8,7 +8,7 @@ layout: service
 
 DeepPhe results that are stored in a Neo4J database such as those created by DeepPhe-XN 
 can be utilized with the 
-[DeepPhe visual analytics tool](https://github.com/DeepPhe/DeepPhe-Viz) (DeepPhe-Viz), 
+[DeepPhe visual analytics tool](https://github.com/DeepPhe/DeepPhe-Visualizer-v2) (DeepPhe-Viz), 
 which provides a web-based interface to data, supporting
 review of both cohorts and individual patient records. 
 

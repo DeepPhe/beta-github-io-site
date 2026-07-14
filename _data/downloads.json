@@ -7,8 +7,8 @@
    },
    {
       "title": "DeepPhe Visual Analytics Tool (DeepPhe-Viz)",
-      "wiki" : "https://github.com/DeepPhe/DeepPhe-Viz/wiki",
-      "link": "https://github.com/DeepPhe/DeepPhe-Viz/releases/tag/v20210826",
+      "wiki" : "https://github.com/DeepPhe/DeepPhe-Visualizer-v2",
+      "link": "https://github.com/DeepPhe/DeepPhe-Visualizer-v2/releases/tag/v0.7.1",
       "description": "Cancer Deep Phenotype Visual Analytics Tool."
    },
    {
