@@ -1,0 +1,248 @@
+.publications {
+  color: var(--text);
+}
+
+.publications-header {
+  margin-bottom: 28px;
+}
+
+.publications-header p {
+  color: var(--text-muted);
+  max-width: 780px;
+}
+
+.publications-controls {
+  display: grid;
+  gap: 16px;
+  margin: 28px 0;
+}
+
+.publications-search label {
+  display: block;
+  color: var(--text-muted);
+  font-weight: 600;
+  margin-bottom: 8px;
+}
+
+.publications-search-field {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  padding: 10px 12px;
+}
+
+.publications-search-icon {
+  color: var(--text-subtle);
+  flex: 0 0 auto;
+}
+
+.publications-search input {
+  width: 100%;
+  color: var(--text);
+  background: transparent;
+  border: 0;
+  outline: 0;
+}
+
+.publications-search input::placeholder {
+  color: var(--text-subtle);
+}
+
+.publications-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.publications-filter {
+  color: var(--text-muted);
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 8px 14px;
+  cursor: pointer;
+}
+
+.publications-filter[aria-pressed="true"],
+.publications-filter:hover {
+  color: var(--text);
+  background: var(--surface-2);
+  border-color: var(--brand);
+}
+
+.publications-count,
+.publications-empty {
+  color: var(--text-muted);
+}
+
+.publications-empty {
+  padding: 18px 0;
+}
+
+.publications-featured {
+  margin: 24px 0 36px;
+  padding: 18px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.publications-featured h2 {
+  color: var(--text);
+  font-size: 1.25rem;
+  margin-top: 0;
+}
+
+.publications-featured-grid {
+  display: grid;
+  gap: 14px;
+}
+
+.publications-featured .publication-entry {
+  padding: 16px 0 0;
+}
+
+.publications-section {
+  margin-top: 42px;
+}
+
+.publications-section > h2 {
+  color: var(--text);
+  font-size: 1.65rem;
+}
+
+.publication-year-group {
+  margin-top: 28px;
+}
+
+.publication-year {
+  color: var(--link);
+  font-size: 1.25rem;
+  margin: 0;
+}
+
+.publication-entry {
+  padding: 18px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.publication-entry[hidden],
+.publication-year-group[hidden],
+.publications-section[hidden],
+.publications-empty[hidden] {
+  display: none;
+}
+
+.publication-title {
+  color: var(--text);
+  font-size: 1.1rem;
+  font-weight: 600;
+  line-height: 1.35;
+  margin: 0 0 8px;
+}
+
+.publication-authors,
+.publication-presented {
+  color: var(--text-muted);
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 0 0 8px;
+}
+
+.publication-presented {
+  color: var(--text-muted);
+  margin-top: 8px;
+}
+
+.publication-meta {
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 8px;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.publication-badge,
+.publication-new {
+  display: inline-flex;
+  align-items: center;
+  min-height: 24px;
+  border-radius: 999px;
+  padding: 2px 9px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  letter-spacing: 0;
+}
+
+.publication-badge-journal,
+.publication-badge-preprint {
+  color: var(--text);
+  background: var(--brand-dim);
+}
+
+.publication-badge-conference,
+.publication-badge-talk,
+.publication-badge-panel {
+  color: var(--text-muted);
+  background: transparent;
+  border: 1px solid var(--border);
+}
+
+.publication-new {
+  color: var(--bg);
+  background: var(--amber);
+}
+
+.publication-location::before {
+  content: "·";
+  margin-right: 8px;
+}
+
+.publication-links {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.publication-links a {
+  color: var(--link);
+  border: 1px solid var(--border);
+  border-radius: 999px;
+  padding: 2px 8px;
+  text-decoration: none;
+}
+
+.publication-links a:hover {
+  color: var(--link-hover);
+  border-color: var(--brand);
+  text-decoration: none;
+}
+
+.publications a:focus-visible,
+.publications button:focus-visible,
+.publications input:focus-visible {
+  outline: 3px solid var(--link-hover);
+  outline-offset: 3px;
+}
+
+@media (min-width: 768px) {
+  .publications-controls {
+    grid-template-columns: minmax(260px, 1fr) auto;
+    align-items: end;
+  }
+
+  .publications-featured-grid {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .publications-filter,
+  .publication-links a {
+    transition: border-color 120ms ease, background-color 120ms ease, color 120ms ease;
+  }
+}
