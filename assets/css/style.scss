@@ -9,39 +9,55 @@
 
 
 // Colors
-// Default Blueish Gray Background
-$primary: #264653;
+$bg: #040A16;
+$surface: #0C1826;
+$surface-2: #152438;
+$border: #1E3047;
+$text: #F4F6F8;
+$text-muted: #9BA6B4;
+$text-subtle: #6C7788;
+$brand: #367B82;
+$brand-dim: #275562;
+$link: #5FB4BC;
+$link-hover: #7CCAD1;
+$amber: #E2A45C;
+$success: #4FB07A;
+$warning: #E2A45C;
+$danger: #E0736B;
 
-//Attempt 1:
-$background-color: #39603D;
+:root {
+  --bg: #040A16;
+  --surface: #0C1826;
+  --surface-2: #152438;
+  --border: #1E3047;
+  --text: #F4F6F8;
+  --text-muted: #9BA6B4;
+  --text-subtle: #6C7788;
+  --brand: #367B82;
+  --brand-dim: #275562;
+  --link: #5FB4BC;
+  --link-hover: #7CCAD1;
+  --amber: #E2A45C;
+  --success: #4FB07A;
+  --warning: #E2A45C;
+  --danger: #E0736B;
+}
 
-$linear-bc : linear-gradient(#87CEEB 35%, #3987c9);
-
-
-// Greenish Background
-$secondary: #2a9d8f;
-
-//Attempt 1:
-$section-bc: #FFFFFF;
-
-$text-color: #3C403D;
-
-$download-bc: #3987c9;
-
-$download-tc: #ffffff;
-
-//download background color = dbc
-$secondary-dbc: #87CEEB;
-
-$black: darken(white, 15%);
-$white: #264653;
-$white-offset: #2a9d8f;
-// Bright Blue
-$steel: #ffffff;
-$foo: #Ff0000;
-// Default Grayish Blue Link
-//$lightlink: #44829b;
-$lightlink: #7FB3D5;
+$primary: $bg;
+$background-color: $bg;
+$linear-bc: linear-gradient(180deg, $bg 0%, $surface 100%);
+$secondary: $brand;
+$section-bc: $surface;
+$text-color: $text-muted;
+$download-bc: $brand;
+$download-tc: $text;
+$secondary-dbc: $brand-dim;
+$black: $text-muted;
+$white: $text;
+$white-offset: $border;
+$steel: $text;
+$foo: $danger;
+$lightlink: $link;
 
 .hp-paper-link{
   text-decoration: underline;
@@ -69,9 +85,10 @@ $lightlink: #7FB3D5;
 .section {
   border-radius: 15px;
   border-style: solid;
+  border-color: $border;
   margin-top: 50px;
   padding:30px;
-  background-color: rgb(23, 37, 59);
+  background-color: $surface;
 }
 
 .papers-section {
@@ -92,7 +109,7 @@ $lightlink: #7FB3D5;
 }
 
 .documentation-section h2 {
-  color: #ffffff;
+  color: $text;
   font-size: 1.6rem;
   margin-bottom: 16px;
 }
@@ -107,25 +124,25 @@ $lightlink: #7FB3D5;
   display: block;
   min-height: 150px;
   padding: 22px;
-  border: 2px solid rgba(127, 179, 213, 0.75);
+  border: 2px solid $border;
   border-radius: 8px;
-  background: #223550;
-  color: #ffffff;
+  background: $surface;
+  color: $text;
   text-decoration: none;
   transition: border-color 120ms ease, background-color 120ms ease, transform 120ms ease;
 }
 
 .documentation-card:hover,
 .documentation-card:focus {
-  color: #ffffff;
+  color: $text;
   text-decoration: none;
-  border-color: #87CEEB;
-  background: #294465;
+  border-color: $brand;
+  background: $surface-2;
   transform: translateY(-2px);
 }
 
 .documentation-card:focus {
-  outline: 3px solid #ffffff;
+  outline: 3px solid $link-hover;
   outline-offset: 3px;
 }
 
@@ -141,7 +158,7 @@ $lightlink: #7FB3D5;
 }
 
 .documentation-card-description {
-  color: #e6e6e6;
+  color: $text-muted;
   font-size: 1rem;
   line-height: 1.45;
 }
@@ -175,18 +192,18 @@ $lightlink: #7FB3D5;
 }
 .download-row-header-empty {
   width:20%;
-  color: white;
+  color: $text;
   font-size: 30px;
   text-align: center;
 
 }
 .download-row-header {
   margin-top:40px;
-  color:white;
+  color:$text;
   width:20%;
   align-items: center;
   justify-content: center;
-  background-color: rgb(23, 37, 59);
+  background-color: $surface;
   text-align: center;
 }
 
@@ -218,8 +235,9 @@ $lightlink: #7FB3D5;
 .software-row {
   width:80%;
   margin-left: auto;
-  background-color: #2a9d8f;
-  fill: white;
+  background-color: $surface-2;
+  border-left: 1px solid $border;
+  fill: $text;
 }
 .software-row a,
 .software-versions-header a {
@@ -229,7 +247,7 @@ $lightlink: #7FB3D5;
 
 }
 .software-versions-header .nav-item {
-  background-color: rgb(23, 37, 59);
+  background-color: $surface;
   color: $white;
 
 }
@@ -247,20 +265,20 @@ $lightlink: #7FB3D5;
   font-size: 13px;
   color:$text-color;
   margin-top: 5px;
-  border-bottom: 1px solid black;
+  border-bottom: 1px solid $border;
 }
 
 .software-versions-header .blurb {
-  color: gray;
+  color: $text-muted;
 }
 
 .software-versions-header .active .blurb {
-  color: white;
+  color: $text;
 }
 
 
 .software-versions-header .nav-item.active {
-  background-color: $secondary;
+  background-color: $brand-dim;
 }
 
 .version-title {
@@ -275,34 +293,36 @@ $lightlink: #7FB3D5;
 }
 
 .download-title {
-  color: white;
+  color: $text;
   font-size: 16px;
 }
 
 .software-nav-header a:hover * {
-  background-color: $secondary;
-  color: white;
-  fill: white;
+  background-color: transparent;
+  color: $text;
+  fill: $text;
+}
+.software-nav-header a:hover {
+  background-color: $brand-dim;
 }
 .software-nav-header  svg {
-  fill: $secondary;
-  color: white;
-  fill: white;
+  fill: $link;
+  color: $text;
 
 }
 
 .software-nav-header {
-  border-bottom-color: white;
+  border-bottom-color: $border;
   border-bottom-width: 1px;
   border-bottom-style: solid;
-  color: white;
-  fill: white;
+  color: $text;
+  fill: $text;
 }
 
 .software-logo-container {
   padding-top:25px;
-  color: white;
-  fill: white;
+  color: $text;
+  fill: $link;
 }
 
 .embed-container{
@@ -345,7 +365,7 @@ color: $text-color;
   font: var(--fa-font-solid);
   content: "\f019";
   font-size: 50px;
-  color: black;
+  color: $brand;
   position: absolute;
   bottom: 0;
   text-decoration: none !important;
@@ -362,23 +382,23 @@ color: $text-color;
 
 
 h1 {
-  color: #ffffff;
+  color: $text;
 }
 
 p {
-  color: #c4c4c4;
+  color: $text-muted;
 }
 
 // Links
 // $link-color was $primary;
 //$link-color: $primary;
-$link-color: #d7d7d7;
+$link-color: $link;
 $link-decoration: none;
 // was lighten($primary)
-$link-hover-color: lighten($link-color, 10%);
+$link-hover-color: $link-hover;
 $link-hover-decoration: underline;
 
-$lightlink-hover-color: lighten($lightlink,10%);
+$lightlink-hover-color: $link-hover;
 
 // Fonts
 $font-family-base: Helvetica, Arial, sans-serif, -apple-system;
@@ -386,12 +406,12 @@ $font-family-heading: Helvetica, Arial, sans-serif, -apple-system;
 
 
 // Footer
-$footer-background-color: $primary;
-$footer-text-color: $black;
-$sub-footer-background-color: $primary;
-$sub-footer-text-color: $black;
+$footer-background-color: $surface;
+$footer-text-color: $text-muted;
+$sub-footer-background-color: $bg;
+$sub-footer-text-color: $text-muted;
 
-$feature-title-link-color: #000000;
+$feature-title-link-color: $text;
 // Bootstrap
 @import 'bootstrap-variables';
 @import 'bootstrap/bootstrap-reboot';
@@ -432,15 +452,15 @@ $feature-title-link-color: #000000;
 }
 
 .sub-footer .row {
-  background-color: $primary;
+  background-color: $bg;
 }
 li {
-  color: #c4c4c4;
+  color: $text-muted;
   padding-bottom: 3px;
 }
 
 .survey-section {
-  background-color: #2a9d8f;
+  background-color: $brand-dim;
   padding-top:50px;
 }
 
@@ -454,6 +474,8 @@ li {
   margin-right: auto;
 }
 body {
+  background-color: $bg;
+  color: $text;
   font-size: 16px;
   line-height: 1.2;
   font-family: $font-family-base;

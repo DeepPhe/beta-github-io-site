@@ -15,13 +15,15 @@
         display: inline-block;
         font-weight: normal;
         text-decoration: none;
-        color: $primary;
+        color: $text-muted;
         &:hover {
+          color: $link-hover;
           text-decoration: underline;
         }
       }
       &.active {
         > a {
+          color: $text;
           font-weight: bold;
           text-decoration: none;
           &:hover {
