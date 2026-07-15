@@ -14,7 +14,7 @@ main:
   - name: "Documentation"
     url: "/documentation/"
     weight: 6
-  - name: "Videos"
+  - name: "Video"
     url: "/videos/"
     weight: 7
   - name: "Papers"

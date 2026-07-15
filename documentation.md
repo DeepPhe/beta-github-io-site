@@ -10,7 +10,7 @@ description: DeepPhe documentation guides for installation, desktop use, visuali
   <div class="grid">
     <a class="card" href="https://deepphe.github.io/installation/user/download">
       <h3>DeepPhe Installation Guide</h3>
-      <p>Download DeepPhe and start using the installed XN and Visualizer pieces.</p>
+      <p>Download DeepPhe and start using the installed DeepPhe-XN and DeepPhe Visualizer pieces.</p>
       <span class="go" aria-hidden="true">&rarr;</span>
     </a>
     <a class="card" href="https://deepphe.github.io/dphe-gui/">
@@ -20,7 +20,7 @@ description: DeepPhe documentation guides for installation, desktop use, visuali
     </a>
     <a class="card" href="https://deepphe.github.io/dphe-db-pipeline/">
       <h3>DeepPhe DB Pipeline</h3>
-      <p>Load DeepPhe output into the database for downstream API and Viz workflows.</p>
+      <p>Load DeepPhe output into the database for downstream DeepPhe Data API and DeepPhe Visualizer workflows.</p>
       <span class="go" aria-hidden="true">&rarr;</span>
     </a>
     <a class="card" href="https://deepphe.github.io/dphe-data-api/">

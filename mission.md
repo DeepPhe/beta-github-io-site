@@ -5,7 +5,7 @@ layout: papers
 description: project missions
 ---
 
-# DeepPhe for Translational Research (DeepPhe-XN)
+# DeepPhe-XN
 
 The complexities of cancer care create significant challenges for the extraction of information for
 retrospective research. As patients progress through diagnosis to treatment and subsequent monitoring,
@@ -30,10 +30,10 @@ by clinicians or researchers with appropriate permissions to read notes de-ident
 or through other appropriate means.
 
    
-# DeepPhe for Cancer Registries (DeepPhe-CR) 
+# DeepPhe-CR
    
    
-The Cancer Deep Phenotype Extraction for the Cancer Registry (DeepPhe-CR) project strives to use 
+The DeepPhe-CR project strives to use
 Natural Language Processing (NLP) and Ontology Based Summarization (OBS) to extract key cancer attributes
 from clinical notes, and to use those attributes to increase the efficacy and efficiency of cancer registry
 data abstraction processes. Achieving this goal requires the development of clear architectures and
