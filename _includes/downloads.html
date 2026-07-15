@@ -77,6 +77,56 @@
                     </nav>
                     {% endif %}
 
+                    {% if site.data.db-pipeline-downloads %}
+                    <nav aria-label="DeepPhe DB Pipeline downloads" class="nav nav-pills software-nav-header">
+                        <div class="container">
+                            <div class="d-flex flex-md-row">
+                                <div class="download-row-header"><div class="row-header-first-line">DeepPhe DB</div><div class="row-header-second-line">Pipeline</div></div>
+                                <div class="flex-md-row d-flex software-row">
+                                    {% for download in site.data.db-pipeline-downloads %}
+                                    <a class="flex-md-column flex-md-fill nav-item nav-link"
+                                       href="{{ download.download }}">
+                                        <div class="software-logo-container">
+                                            <svg class="software-logo" focusable="false" height="50" viewBox="0 0 50 50"
+                                                 width="50">
+                                                <path d="{{ download.icon }}"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="download-title"> {{ download.title }} <br/> (7.1, built 2026-07-08)</div>
+                                        <div class="download-filename"> {{ download.description }} </div>
+                                    </a>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                    {% endif %}
+
+                    {% if site.data.data-api-downloads %}
+                    <nav aria-label="DeepPhe Data API downloads" class="nav nav-pills software-nav-header">
+                        <div class="container">
+                            <div class="d-flex flex-md-row">
+                                <div class="download-row-header"><div class="row-header-first-line">DeepPhe Data</div><div class="row-header-second-line">API</div></div>
+                                <div class="flex-md-row d-flex software-row">
+                                    {% for download in site.data.data-api-downloads %}
+                                    <a class="flex-md-column flex-md-fill nav-item nav-link"
+                                       href="{{ download.download }}">
+                                        <div class="software-logo-container">
+                                            <svg class="software-logo" focusable="false" height="50" viewBox="0 0 50 50"
+                                                 width="50">
+                                                <path d="{{ download.icon }}"></path>
+                                            </svg>
+                                        </div>
+                                        <div class="download-title"> {{ download.title }} <br/> (7.1, built 2026-07-08)</div>
+                                        <div class="download-filename"> {{ download.description }} </div>
+                                    </a>
+                                    {% endfor %}
+                                </div>
+                            </div>
+                        </div>
+                    </nav>
+                    {% endif %}
+
                     {% if site.data.viz-source %}
                     <nav aria-label="DeepPhe-Viz source code downloads" class="nav nav-pills software-nav-header">
                         <div class="container">

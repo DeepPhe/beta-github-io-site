@@ -53,7 +53,7 @@ extra_js:
   </section>
 
   <section class="publications-section" data-publication-section aria-labelledby="publications-heading">
-    <h2 id="publications-heading">Publications</h2>
+    <h2 id="publications-heading">Peer-reviewed &amp; conference</h2>
 {% assign publication_groups = publication_entries | group_by: "year" | sort: "name" | reverse %}
 {% for group in publication_groups %}
 {% assign entries = group.items | sort: "title" %}

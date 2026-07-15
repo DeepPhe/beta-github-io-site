@@ -187,9 +187,9 @@
 .publication-badge-conference,
 .publication-badge-talk,
 .publication-badge-panel {
-  color: var(--text-muted);
+  color: var(--text);
   background: transparent;
-  border: 1px solid var(--border);
+  border: 1px solid var(--brand);
 }
 
 .publication-new {
