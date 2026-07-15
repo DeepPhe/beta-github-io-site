@@ -1,10 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <svg width="32" height="32" viewBox="0 0 32 32" xmlns="http://www.w3.org/2000/svg" role="img" aria-labelledby="title">
-  <title id="title">DeepPhe favicon</title>
-  <rect width="32" height="32" rx="6" fill="#040A16"/>
-  <rect x="1" y="1" width="30" height="30" rx="5" fill="none" stroke="#1E3047" stroke-width="2"/>
-  <path d="M10.5 6H6.5V26H10.5V23H9V9H10.5V6Z" fill="#5FB4BC"/>
-  <path d="M21.5 6H25.5V26H21.5V23H23V9H21.5V6Z" fill="#5FB4BC"/>
-  <path d="M13 8H16.25V25H13V8Z" fill="#F4F6F8"/>
-  <path d="M15.25 8H20.1C23.45 8 25.5 10.1 25.5 13.2C25.5 16.25 23.35 18.45 20.05 18.45H15.25V15.5H19.65C21.2 15.5 22.15 14.65 22.15 13.25C22.15 11.85 21.2 11 19.65 11H15.25V8Z" fill="#5FB4BC"/>
+  <title id="title">DeepPhe DP favicon</title>
+  <rect width="32" height="32" rx="7" fill="#040A16"/>
+  <rect x="1.5" y="1.5" width="29" height="29" rx="6" fill="#0C1826" stroke="#1E3047" stroke-width="2"/>
+  <text x="10.9" y="21.4" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14.5" font-weight="800" fill="#F4F6F8">D</text>
+  <text x="20.9" y="21.4" text-anchor="middle" font-family="Arial, Helvetica, sans-serif" font-size="14.5" font-weight="800" fill="#5FB4BC">P</text>
 </svg>

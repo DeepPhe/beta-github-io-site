@@ -8,15 +8,11 @@ description: DeepPhe introductory video presentation.
 {% assign videos = site.data.videos %}
 
 <div class="videos-page">
-  <header class="videos-header">
-    <h1>Video</h1>
-  </header>
-
 {% if videos.size == 1 %}
 {% assign v = videos.first %}
   <section class="video-feature" aria-labelledby="video-title-1">
     <div class="video-caption">
-      <h2 id="video-title-1">{{ v.title }}</h2>
+      <h1 id="video-title-1">{{ v.title }}</h1>
       <p>{{ v.venue }} &middot; {{ v.year }}</p>
 {% if v.description and v.description != "" %}
       <p class="video-description">{{ v.description }}</p>
@@ -27,6 +23,10 @@ description: DeepPhe introductory video presentation.
     </div>
   </section>
 {% else %}
+  <header class="videos-header">
+    <h1>Videos</h1>
+  </header>
+
   <div class="video-grid">
 {% for v in videos %}
     <article class="video-card" aria-labelledby="video-title-{{ forloop.index }}">

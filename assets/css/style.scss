@@ -211,6 +211,7 @@ $lightlink: $link;
   padding: 16px;
 }
 
+.video-caption h1,
 .video-caption h2 {
   margin: 0 0 4px;
   color: var(--link);
@@ -273,30 +274,6 @@ $lightlink: $link;
   padding-right: 0px;
   padding-left: 0px;
 }
-.download-row-header-empty {
-  width:20%;
-  color: $text;
-  font-size: 30px;
-  text-align: center;
-
-}
-.download-row-header {
-  margin-top:40px;
-  color:$text;
-  width:20%;
-  align-items: center;
-  justify-content: center;
-  background-color: $surface;
-  text-align: center;
-}
-
-.row-header-second-line {
-  font-size:14px;
-}
-#download-navs {
-  margin-top:50px;
-  margin-bottom: 50px;
-}
 
 .container {
   padding:0px !important;
@@ -305,107 +282,160 @@ $lightlink: $link;
 
 }
 
-
-.software-versions-header {
-  border-bottom-width: 4px;
-  border-bottom-style: solid;
-  border-bottom-color: $secondary;
-  width:80%;
-  margin-left: auto;
-
+.downloads-page {
+  display: grid;
+  gap: 32px;
+  color: var(--text);
 }
 
-.software-row {
-  width:80%;
-  margin-left: auto;
-  background-color: $surface-2;
-  border-left: 1px solid $border;
-  fill: $text;
-}
-.software-row a,
-.software-versions-header a {
-  flex: 1 1 0px !important;
-}
-.software-versions-header > nav {
-
-}
-.software-versions-header .nav-item {
-  background-color: $surface;
-  color: $white;
-
+.downloads-header {
+  display: grid;
+  gap: 8px;
 }
 
-
-.software-versions-header .nav-link {
-  color: $white;
-  padding-left: 0px;
-  padding-right: 0px;
-  padding-top: 0px;
-
+.downloads-header h1,
+.downloads-header h2 {
+  margin: 0;
+  color: var(--text);
 }
 
-.blurb {
-  font-size: 13px;
-  color:$text-color;
-  margin-top: 5px;
-  border-bottom: 1px solid $border;
+.downloads-header p {
+  margin: 0;
+  color: var(--text-muted);
 }
 
-.software-versions-header .blurb {
-  color: $text-muted;
+.downloads-product {
+  display: grid;
+  gap: 20px;
+  padding-top: 24px;
+  border-top: 1px solid var(--border);
 }
 
-.software-versions-header .active .blurb {
-  color: $text;
+.downloads-product:first-of-type {
+  padding-top: 0;
+  border-top: 0;
 }
 
-
-.software-versions-header .nav-item.active {
-  background-color: $brand-dim;
+.downloads-product-header {
+  display: grid;
+  gap: 6px;
 }
 
-.version-title {
-  font-size: 20px;
+.downloads-product-header h2 {
+  margin: 0;
+  color: var(--text);
+  font-size: 1.45rem;
 }
 
-.version-subtitle {
-  font-size: 16px;
-}
-.software-versions-header .nav-item {
-  border-radius: 0px;
+.downloads-product-header a {
+  color: var(--link);
 }
 
-.download-title {
-  color: $text;
-  font-size: 16px;
+.downloads-product-header a:hover {
+  color: var(--link-hover);
 }
 
-.software-nav-header a:hover * {
-  background-color: transparent;
-  color: $text;
-  fill: $text;
-}
-.software-nav-header a:hover {
-  background-color: $brand-dim;
-}
-.software-nav-header  svg {
-  fill: $link;
-  color: $text;
-
+.downloads-product-header p {
+  margin: 0;
+  color: var(--text-muted);
 }
 
-.software-nav-header {
-  border-bottom-color: $border;
-  border-bottom-width: 1px;
-  border-bottom-style: solid;
-  color: $text;
-  fill: $text;
+.downloads-groups {
+  display: grid;
+  border-top: 1px solid var(--border);
 }
 
-.software-logo-container {
-  padding-top:25px;
-  color: $text;
-  fill: $link;
+.downloads-group {
+  display: grid;
+  gap: 16px;
+  padding: 20px 0;
+  border-bottom: 1px solid var(--border);
+}
+
+.downloads-group-label h3 {
+  margin: 0 0 4px;
+  color: var(--text);
+  font-size: 1rem;
+}
+
+.downloads-group-label p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: .92rem;
+}
+
+.downloads-assets {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  gap: 12px;
+}
+
+.download-card {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 12px;
+  align-items: center;
+  min-height: 118px;
+  padding: 16px;
+  color: var(--text);
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.download-card:hover {
+  color: var(--text);
+  background: var(--brand-dim);
+  border-color: var(--brand);
+  text-decoration: none;
+}
+
+.download-card:focus-visible {
+  outline: 3px solid var(--link-hover);
+  outline-offset: 3px;
+}
+
+.download-card-icon {
+  display: inline-flex;
+  color: var(--link);
+}
+
+.download-card-icon svg {
+  fill: currentColor;
+}
+
+.download-card-text {
+  display: grid;
+  gap: 4px;
+  min-width: 0;
+}
+
+.download-card-title {
+  color: var(--text);
+  font-weight: 700;
+  line-height: 1.3;
+}
+
+.download-card-version {
+  color: var(--text-muted);
+  font-size: .92rem;
+  line-height: 1.35;
+}
+
+.download-card-file {
+  overflow-wrap: anywhere;
+  color: var(--text-muted);
+  font-family: SFMono-Regular, Consolas, "Liberation Mono", monospace;
+  font-size: .8rem;
+  line-height: 1.35;
+}
+
+@media (min-width: 768px) {
+  .downloads-group {
+    grid-template-columns: minmax(170px, 22%) minmax(0, 1fr);
+    align-items: stretch;
+  }
 }
 
 .embed-container{
@@ -426,11 +456,6 @@ $lightlink: $link;
 
 a{
 color: $text-color;
-}
-.software-nav-header .download-filename {
-  color: white;
-  font-size: 12px;
-  padding-bottom:10px;
 }
 .service-title a:after {
   font: var(--fa-font-solid);

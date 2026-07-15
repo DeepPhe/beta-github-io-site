@@ -1,195 +1,68 @@
+{% assign windows_icon = "M1.589 23.55L1.572 8.24l18.839-2.558V23.55zM23.55 5.225l25.112-3.654V23.55H23.55zM48.669 26.69l-.006 21.979-25.112-3.533V26.69zM20.41 44.736l-18.824-2.58-.001-15.466H20.41z" %}
+{% assign apple_icon = "M39.054 34.065q-1.093 3.504-3.448 7.009-3.617 5.495-7.205 5.495-1.374 0-3.925-.897-2.411-.897-4.233-.897-1.71 0-3.981.925-2.271.953-3.701.953-4.261 0-8.439-7.261Q.001 32.075.001 25.29q0-6.392 3.168-10.485 3.14-4.037 7.962-4.037 2.019 0 4.962.841 2.916.841 3.869.841 1.262 0 4.009-.953 2.86-.953 4.85-.953 3.336 0 5.972 1.822 1.458 1.009 2.916 2.804-2.215 1.878-3.196 3.308-1.822 2.635-1.822 5.803 0 3.476 1.934 6.252t4.43 3.533zM28.512 1.179q0 1.71-.813 3.813-.841 2.103-2.607 3.869-1.514 1.514-3.028 2.019-1.037.308-2.916.477.084-4.177 2.187-7.205 2.075-3 7.009-4.149.028.084.07.308t.07.308q0 .112.014.28t.014.28z" %}
+{% assign linux_icon = "M5 7h40c2.761 0 5 2.239 5 5v26c0 2.761-2.239 5-5 5H5c-2.761 0-5-2.239-5-5V12c0-2.761 2.239-5 5-5zm0 9v22h40V16H5zm6.5 5.5l7 6.5-7 6.5-2.5-2.7 4.1-3.8L9 24.2l2.5-2.7zM21 31h14v4H21v-4z" %}
+{% assign box_icon = "M25.03.934L.159 11.65l24.895 10.632 25.152-10.656L25.03.935zm1.02 22.686v25.686l24.188-11.483V13.345L26.05 23.62zM.001 37.824l24.27 11.483V23.621L.001 13.346v24.478z" %}
+{% assign products = site.data.downloads.products %}
 
-<div id="download-navs">
-    <div class="container">
-        <div class="row">
-            <div class="download-row-header-empty">Downloads</div>
-            {% if site.data.deepphe-versions %}
-            <nav aria-label="Download product tabs" class="nav nav-pills nav-justified software-versions-header flex-md-row" role="tablist">
-                {% for version in site.data.deepphe-versions %}
-                <a aria-controls="{{ version.id }}"
-                   class="flex-md-fill flex-md-column nav-item nav-link {% if forloop.first %}active{% endif %}"
-                   data-bs-target="#{{ version.id }}"
-                   data-bs-toggle="pill"
-                   href="#{{ version.id }}"
-                   id="{{ version.id }}-tab"
-                   role="tab"
-                >
-                    <div class="version-title">{{ version.title }}</div>
-                    <div class="version-subtitle">{{ version.subtitle }}</div>
-                    <div class="blurb">{{ version.blurb }}</div>
-                </a>
-                {% endfor %}
-            </nav>
-            {% endif %}
-        </div>
-        <div class="row">
-            <div class="tab-content" id="pills-tabContent">
-                <div aria-labelledby="xn-downloads-tab" class="tab-pane justify-content-center show active"
-                     id="xn-downloads"
-                     role="tabpanel">
-                    {% if site.data.xn-installers %}
-                    <nav aria-label="DeepPhe-XN installer downloads" class="nav nav-pills software-nav-header">
-                        <div class="container">
-                            <div class="d-flex flex-md-row">
-                                <div class="download-row-header">DeepPhe-XN<br><div class="row-header-second-line">Installers</div></div>
-                                <div class="flex-md-row d-flex software-row">
-                                    {% for download in site.data.xn-installers %}
-                                    <a class="flex-md-column flex-md-fill nav-item nav-link" onclick='{{ download.window }}'
-                                       href="{{ download.download }}">
-                                        <div class="software-logo-container">
-                                            <svg class="software-logo" focusable="false" height="50" viewBox="0 0 50 50"
-                                                 width="50">
-                                                <path d="{{ download.icon }}"></path>
-                                            </svg>
-                                        </div>
-                                        <div class="download-title"> {{ download.title }} <br/> (7.1, built 2026-07-13)</div>
-                                        <div class="download-filename"> {{ download.description }}</div>
-                                    </a>
-                                    {% endfor %}
-                                </div>
-                            </div>
-                        </div>
-                    </nav>
-                    {% endif %}
+<div id="download-navs" class="downloads-page">
+  <header class="downloads-header">
+{% if page.url == "/downloads/" %}
+    <h1>Downloads</h1>
+{% else %}
+    <h2>Downloads</h2>
+{% endif %}
+    <p>Installers, source archives, and supporting DeepPhe release packages.</p>
+  </header>
 
-                    {% if site.data.xn-source %}
-                    <nav aria-label="DeepPhe-XN source code downloads" class="nav nav-pills software-nav-header">
-                        <div class="container">
-                            <div class="d-flex flex-md-row">
-                                <div class="download-row-header">DeepPhe-XN<br><div class="row-header-second-line">Source Code</div></div>
-                                <div class="flex-md-row d-flex software-row">
-                                    {% for download in site.data.xn-source %}
-                                    <a class="flex-md-column flex-md-fill nav-item nav-link"
-                                       href="{{ download.download }}">
-                                        <div class="software-logo-container">
-                                            <svg class="software-logo" focusable="false" height="50" viewBox="0 0 50 50"
-                                                 width="50">
-                                                <path d="{{ download.icon }}"></path>
-                                            </svg>
-                                        </div>
-                                        <div class="download-title"> {{ download.title }} <br/> (xn0.7.1, built 2026-07-07)</div>
-                                        <div class="download-filename"> {{ download.description }}</div>
-                                    </a>
-                                    {% endfor %}
-                                </div>
-                            </div>
-                        </div>
-                    </nav>
-                    {% endif %}
-
-                    {% if site.data.db-pipeline-downloads %}
-                    <nav aria-label="DeepPhe DB Pipeline downloads" class="nav nav-pills software-nav-header">
-                        <div class="container">
-                            <div class="d-flex flex-md-row">
-                                <div class="download-row-header"><div class="row-header-first-line">DeepPhe DB</div><div class="row-header-second-line">Pipeline</div></div>
-                                <div class="flex-md-row d-flex software-row">
-                                    {% for download in site.data.db-pipeline-downloads %}
-                                    <a class="flex-md-column flex-md-fill nav-item nav-link"
-                                       href="{{ download.download }}">
-                                        <div class="software-logo-container">
-                                            <svg class="software-logo" focusable="false" height="50" viewBox="0 0 50 50"
-                                                 width="50">
-                                                <path d="{{ download.icon }}"></path>
-                                            </svg>
-                                        </div>
-                                        <div class="download-title"> {{ download.title }} <br/> (7.1, built 2026-07-08)</div>
-                                        <div class="download-filename"> {{ download.description }} </div>
-                                    </a>
-                                    {% endfor %}
-                                </div>
-                            </div>
-                        </div>
-                    </nav>
-                    {% endif %}
-
-                    {% if site.data.data-api-downloads %}
-                    <nav aria-label="DeepPhe Data API downloads" class="nav nav-pills software-nav-header">
-                        <div class="container">
-                            <div class="d-flex flex-md-row">
-                                <div class="download-row-header"><div class="row-header-first-line">DeepPhe Data</div><div class="row-header-second-line">API</div></div>
-                                <div class="flex-md-row d-flex software-row">
-                                    {% for download in site.data.data-api-downloads %}
-                                    <a class="flex-md-column flex-md-fill nav-item nav-link"
-                                       href="{{ download.download }}">
-                                        <div class="software-logo-container">
-                                            <svg class="software-logo" focusable="false" height="50" viewBox="0 0 50 50"
-                                                 width="50">
-                                                <path d="{{ download.icon }}"></path>
-                                            </svg>
-                                        </div>
-                                        <div class="download-title"> {{ download.title }} <br/> (7.1, built 2026-07-08)</div>
-                                        <div class="download-filename"> {{ download.description }} </div>
-                                    </a>
-                                    {% endfor %}
-                                </div>
-                            </div>
-                        </div>
-                    </nav>
-                    {% endif %}
-
-                    {% if site.data.viz-source %}
-                    <nav aria-label="DeepPhe Visualizer source code downloads" class="nav nav-pills software-nav-header">
-                        <div class="container">
-                            <div class="d-flex flex-md-row">
-                                <div class="download-row-header"><div class="row-header-first-line">DeepPhe Visualizer</div><div class="row-header-second-line">Source Code</div></div>
-                                <div class="flex-md-row d-flex software-row">
-                                    {% for download in site.data.viz-source %}
-                                    <a class="flex-md-column flex-md-fill nav-item nav-link"
-                                       href="{{ download.download }}">
-                                        <div class="software-logo-container">
-                                            <svg class="software-logo" focusable="false" height="50" viewBox="0 0 50 50"
-                                                 width="50">
-                                                <path d="{{ download.icon }}"></path>
-                                            </svg>
-                                        </div>
-                                        <div class="download-title"> {{ download.title }} <br/> (v0.7.1, built 2026-07-14)</div>
-                                        <div class="download-filename"> {{ download.description }} </div>
-                                    </a>
-                                    {% endfor %}
-                                </div>
-                            </div>
-                        </div>
-                    </nav>
-                    {% endif %}
-
-
-
-
-                    </nav>
-                </div>
-
-
-
-                {% if site.data.cr-downloads %}
-                <div aria-labelledby="cr-downloads-tab" class="tab-pane justify-content-center" id="cr-downloads"
-                     role="tabpanel">
-                    <nav aria-label="DeepPhe-CR source code downloads" class="nav nav-pills software-nav-header">
-                        <div class="container">
-                            <div class="d-flex flex-md-row">
-                                <div class="download-row-header"><div class="row-header-first-line">DeepPhe-CR</div><div class="row-header-second-line">Source Code</div></div>
-                                <div class="flex-md-row d-flex software-row">
-                                    {% for download in site.data.cr-downloads %}
-                                    <a class="flex-md-column flex-md-fill nav-item nav-link"
-                                       href="{{ download.download }}">
-                                        <div class="software-logo-container">
-                                            <svg class="software-logo" focusable="false" height="50" viewBox="0 0 50 50"
-                                                 width="50">
-                                                <path d="{{ download.icon }}"></path>
-                                            </svg>
-                                        </div>
-                                        <div class="download-title"> {{ download.title }} <br/> (May 10th 2023)</div>
-                                        <div class="download-filename"> {{ download.description }}</div>
-                                    </a>
-                                    {% endfor %}
-                                </div>
-                            </div>
-                        </div>
-                    </nav>
-                </div>
-                {% endif %}
-
-
-            </div>
-        </div>
+{% for product in products %}
+  <section class="downloads-product" id="downloads-{{ product.id }}" aria-labelledby="downloads-{{ product.id }}-heading">
+    <div class="downloads-product-header">
+      <h2 id="downloads-{{ product.id }}-heading">
+        <a href="{{ product.info_url }}">{{ product.name }}</a>
+      </h2>
+      <p>{{ product.blurb }}</p>
     </div>
+
+    <div class="downloads-groups">
+{% for group in product.groups %}
+      <section class="downloads-group" aria-labelledby="downloads-{{ product.id }}-{{ forloop.index }}-heading">
+        <div class="downloads-group-label">
+          <h3 id="downloads-{{ product.id }}-{{ forloop.index }}-heading">{{ group.label }}</h3>
+          <p>{{ group.version }}{% if group.built %}, built {{ group.built }}{% endif %}</p>
+        </div>
+
+        <div class="downloads-assets">
+{% for asset in group.assets %}
+{% assign icon = box_icon %}
+{% case asset.platform %}
+{% when "windows" %}
+{% assign icon = windows_icon %}
+{% when "macos" %}
+{% assign icon = apple_icon %}
+{% when "macos-intel" %}
+{% assign icon = apple_icon %}
+{% when "macos-arm" %}
+{% assign icon = apple_icon %}
+{% when "linux" %}
+{% assign icon = linux_icon %}
+{% endcase %}
+          <a class="download-card" href="{{ asset.url }}" aria-label="{{ asset.title | escape }}: {{ asset.file | escape }}">
+            <span class="download-card-icon" aria-hidden="true">
+              <svg focusable="false" height="44" viewBox="0 0 50 50" width="44">
+                <path d="{{ icon }}"></path>
+              </svg>
+            </span>
+            <span class="download-card-text">
+              <span class="download-card-title">{{ asset.title }}</span>
+              <span class="download-card-version">({{ group.version }}{% if group.built %}, built {{ group.built }}{% endif %})</span>
+              <span class="download-card-file">{{ asset.file }}</span>
+            </span>
+          </a>
+{% endfor %}
+        </div>
+      </section>
+{% endfor %}
+    </div>
+  </section>
+{% endfor %}
 </div>

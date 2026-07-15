@@ -1,0 +1,120 @@
+products:
+  - id: xn
+    name: "DeepPhe-XN"
+    blurb: "Cancer Deep Phenotype Extraction from Electronic Medical Records"
+    info_url: "https://github.com/DeepPhe/DeepPhe-Release/wiki"
+    groups:
+      - label: "Installers"
+        version: "7.1"
+        built: "2026-07-13"
+        assets:
+          - platform: windows
+            title: "Windows DeepPhe-XN & DeepPhe Visualizer Installer"
+            file: "DeepPhe_windows-7.1.exe"
+            url: "https://github.com/DeepPhe/DeepPhe-Dist/releases/download/deepphe-installer-7.1/DeepPhe_windows-7.1.exe"
+          - platform: macos
+            title: "macOS DeepPhe-XN & DeepPhe Visualizer Installer"
+            file: "DeepPhe-7.1.dmg"
+            url: "https://github.com/DeepPhe/DeepPhe-Dist/releases/download/deepphe-installer-7.1/DeepPhe-7.1.dmg"
+          - platform: linux
+            title: "Linux DeepPhe-XN & DeepPhe Visualizer Installer"
+            file: "DeepPhe_linux-x64-7.1.sh"
+            url: "https://github.com/DeepPhe/DeepPhe-Dist/releases/download/deepphe-installer-7.1/DeepPhe_linux-x64-7.1.sh"
+      - label: "DeepPhe-XN NLP"
+        version: "7.1"
+        built: "2026-07-08"
+        assets:
+          - platform: zip
+            title: "DeepPhe-XN NLP Package"
+            file: "DeepPhe-NLP.zip"
+            url: "https://github.com/DeepPhe/DeepPhe-Dist/releases/download/dphe-nlp-7.1/DeepPhe-NLP.zip"
+      - label: "Examples"
+        version: "7.1"
+        built: "2026-07-08"
+        assets:
+          - platform: zip
+            title: "DeepPhe-XN Examples"
+            file: "DeepPhe-examples.zip"
+            url: "https://github.com/DeepPhe/DeepPhe-Dist/releases/download/dphe-examples-7.1/DeepPhe-examples.zip"
+      - label: "Source Code"
+        version: "xn0.7.00"
+        built: "2025-08-19"
+        assets:
+          - platform: zip
+            title: "DeepPhe-XN Source Code (zip)"
+            file: "xn0.7.00.zip"
+            url: "https://github.com/DeepPhe/DeepPhe-Release/archive/refs/tags/xn0.7.00.zip"
+          - platform: targz
+            title: "DeepPhe-XN Source Code (tar.gz)"
+            file: "xn0.7.00.tar.gz"
+            url: "https://github.com/DeepPhe/DeepPhe-Release/archive/refs/tags/xn0.7.00.tar.gz"
+      - label: "DeepPhe DB Pipeline"
+        version: "7.1"
+        built: "2026-07-08"
+        assets:
+          - platform: windows
+            title: "Windows DeepPhe DB Pipeline"
+            file: "DeepPheVizDbCreator-windows-x86_64.exe"
+            url: "https://github.com/DeepPhe/DeepPhe-Dist/releases/download/dphe-db-pipeline-7.1/DeepPheVizDbCreator-windows-x86_64.exe"
+          - platform: macos-intel
+            title: "macOS Intel DeepPhe DB Pipeline"
+            file: "DeepPheVizDbCreator-macos-x86_64"
+            url: "https://github.com/DeepPhe/DeepPhe-Dist/releases/download/dphe-db-pipeline-7.1/DeepPheVizDbCreator-macos-x86_64"
+          - platform: macos-arm
+            title: "macOS ARM DeepPhe DB Pipeline"
+            file: "DeepPheVizDbCreator-macos-arm64"
+            url: "https://github.com/DeepPhe/DeepPhe-Dist/releases/download/dphe-db-pipeline-7.1/DeepPheVizDbCreator-macos-arm64"
+          - platform: linux
+            title: "Linux DeepPhe DB Pipeline"
+            file: "DeepPheVizDbCreator-linux-x86_64"
+            url: "https://github.com/DeepPhe/DeepPhe-Dist/releases/download/dphe-db-pipeline-7.1/DeepPheVizDbCreator-linux-x86_64"
+      - label: "DeepPhe Data API"
+        version: "7.1"
+        built: "2026-07-08"
+        assets:
+          - platform: windows
+            title: "Windows DeepPhe Data API"
+            file: "dphe-data-api-win-x64.exe"
+            url: "https://github.com/DeepPhe/DeepPhe-Dist/releases/download/dphe-data-api-7.1/dphe-data-api-win-x64.exe"
+          - platform: macos-intel
+            title: "macOS Intel DeepPhe Data API"
+            file: "dphe-data-api-macos-x64"
+            url: "https://github.com/DeepPhe/DeepPhe-Dist/releases/download/dphe-data-api-7.1/dphe-data-api-macos-x64"
+          - platform: macos-arm
+            title: "macOS ARM DeepPhe Data API"
+            file: "dphe-data-api-macos-arm64"
+            url: "https://github.com/DeepPhe/DeepPhe-Dist/releases/download/dphe-data-api-7.1/dphe-data-api-macos-arm64"
+          - platform: linux
+            title: "Linux DeepPhe Data API"
+            file: "dphe-data-api-linux-x64"
+            url: "https://github.com/DeepPhe/DeepPhe-Dist/releases/download/dphe-data-api-7.1/dphe-data-api-linux-x64"
+      - label: "DeepPhe Visualizer Source Code"
+        version: "v0.7.1"
+        built: "2026-07-14"
+        assets:
+          - platform: zip
+            title: "DeepPhe Visualizer Source Code (zip)"
+            file: "v0.7.1.zip"
+            url: "https://github.com/DeepPhe/DeepPhe-Visualizer-v2/archive/refs/tags/v0.7.1.zip"
+          - platform: targz
+            title: "DeepPhe Visualizer Source Code (tar.gz)"
+            file: "v0.7.1.tar.gz"
+            url: "https://github.com/DeepPhe/DeepPhe-Visualizer-v2/archive/refs/tags/v0.7.1.tar.gz"
+
+  - id: cr
+    name: "DeepPhe-CR"
+    blurb: "Natural Language Processing Platform for Cancer Surveillance"
+    info_url: "https://github.com/DeepPhe/DeepPhe-CR-Release/wiki"
+    groups:
+      - label: "Source Code"
+        version: "v0.4.0-cr"
+        built: "2023-05-10"
+        assets:
+          - platform: zip
+            title: "DeepPhe-CR Release (zip)"
+            file: "v0.4.0-cr.zip"
+            url: "https://github.com/DeepPhe/DeepPhe-CR-Release/releases/download/v0.4.0-cr/v0.4.0-cr.zip"
+          - platform: tarz
+            title: "DeepPhe-CR Release (tar.z)"
+            file: "v0.4.0-cr.tar.z"
+            url: "https://github.com/DeepPhe/DeepPhe-CR-Release/releases/download/v0.4.0-cr/v0.4.0-cr.tar.z"
