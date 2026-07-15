@@ -9,8 +9,8 @@ homepage:
   show_call_box: false
 
 logo:
-  mobile: "images/logo/DeepPhe.svg"
-  desktop: "images/logo/DeepPhe.svg"
+  mobile: "images/logo/DeepPhe-Name-Only.svg"
+  desktop: "images/logo/DeepPhe-Name-Only.svg"
   desktop_height: "36px"
   logo_url: "/beta-github-io-site/"
 
@@ -21,7 +21,7 @@ footer:
 seo:
   meta_og_title: "DeepPhe"
   meta_og_type: "website"
-  meta_og_image: "/images/illustrations/Splash.png"
+  meta_og_image: "/images/illustrations/DeepPhe-Splash.svg"
   meta_og_description: "A Natural Language Processing System for Extracting Cancer Phenotypes from Clinical Records"
   meta_twitter_card: "summary_large_image"
 
