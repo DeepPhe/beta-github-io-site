@@ -9,25 +9,17 @@ products:
         built: "2026-07-13"
         assets:
           - platform: windows
-            title: "Windows DeepPhe-XN & DeepPhe Visualizer Installer"
+            title: "Windows DeepPhe-XN & DeepPhe Visualizer 2 Installer"
             file: "DeepPhe_windows-7.1.exe"
             url: "https://github.com/DeepPhe/DeepPhe-Dist/releases/download/deepphe-installer-7.1/DeepPhe_windows-7.1.exe"
           - platform: macos
-            title: "macOS DeepPhe-XN & DeepPhe Visualizer Installer"
+            title: "macOS DeepPhe-XN & DeepPhe Visualizer 2 Installer"
             file: "DeepPhe-7.1.dmg"
             url: "https://github.com/DeepPhe/DeepPhe-Dist/releases/download/deepphe-installer-7.1/DeepPhe-7.1.dmg"
           - platform: linux
-            title: "Linux DeepPhe-XN & DeepPhe Visualizer Installer"
+            title: "Linux DeepPhe-XN & DeepPhe Visualizer 2 Installer"
             file: "DeepPhe_linux-x64-7.1.sh"
             url: "https://github.com/DeepPhe/DeepPhe-Dist/releases/download/deepphe-installer-7.1/DeepPhe_linux-x64-7.1.sh"
-      - label: "DeepPhe-XN NLP"
-        version: "7.1"
-        built: "2026-07-08"
-        assets:
-          - platform: zip
-            title: "DeepPhe-XN NLP Package"
-            file: "DeepPhe-NLP.zip"
-            url: "https://github.com/DeepPhe/DeepPhe-Dist/releases/download/dphe-nlp-7.1/DeepPhe-NLP.zip"
       - label: "Examples"
         version: "7.1"
         built: "2026-07-08"
@@ -88,16 +80,16 @@ products:
             title: "Linux DeepPhe Data API"
             file: "dphe-data-api-linux-x64"
             url: "https://github.com/DeepPhe/DeepPhe-Dist/releases/download/dphe-data-api-7.1/dphe-data-api-linux-x64"
-      - label: "DeepPhe Visualizer Source Code"
-        version: "v0.7.1"
+      - label: "DeepPhe Visualizer 2 Source Code"
+        version: "7.1"
         built: "2026-07-14"
         assets:
           - platform: zip
-            title: "DeepPhe Visualizer Source Code (zip)"
+            title: "DeepPhe Visualizer 2 Source Code (zip)"
             file: "v0.7.1.zip"
             url: "https://github.com/DeepPhe/DeepPhe-Visualizer-v2/archive/refs/tags/v0.7.1.zip"
           - platform: targz
-            title: "DeepPhe Visualizer Source Code (tar.gz)"
+            title: "DeepPhe Visualizer 2 Source Code (tar.gz)"
             file: "v0.7.1.tar.gz"
             url: "https://github.com/DeepPhe/DeepPhe-Visualizer-v2/archive/refs/tags/v0.7.1.tar.gz"
 

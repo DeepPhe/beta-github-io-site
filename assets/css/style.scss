@@ -247,6 +247,128 @@ $lightlink: $link;
   border: 0;
 }
 
+.home-installers {
+  color: var(--text);
+}
+
+.home-installers-header {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+
+.home-installers-header h2 {
+  margin: 0;
+  color: var(--text);
+  font-size: 2rem;
+}
+
+.home-installers-header p,
+.home-installers-footer p {
+  margin: 0;
+  color: var(--text-muted);
+}
+
+.installer-buttons {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+}
+
+.installer-card {
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  gap: 14px;
+  align-items: center;
+  min-height: 140px;
+  padding: 20px;
+  color: var(--text);
+  background: var(--brand);
+  border: 1px solid var(--link);
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+.installer-card:hover {
+  color: var(--text);
+  background: var(--link);
+  border-color: var(--link-hover);
+  text-decoration: none;
+}
+
+.installer-card:focus-visible {
+  outline: 3px solid var(--link-hover);
+  outline-offset: 3px;
+}
+
+.installer-card.is-recommended {
+  order: -1;
+  border-color: var(--amber);
+  box-shadow: 0 0 0 2px var(--amber);
+}
+
+.installer-card-icon {
+  display: inline-flex;
+  color: var(--text);
+}
+
+.installer-card-icon svg {
+  fill: currentColor;
+}
+
+.installer-card-copy {
+  display: grid;
+  gap: 5px;
+  min-width: 0;
+}
+
+.installer-recommended-badge {
+  width: fit-content;
+  padding: 3px 8px;
+  color: var(--bg);
+  background: var(--amber);
+  border-radius: 999px;
+  font-size: .72rem;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.installer-card-title {
+  color: var(--text);
+  font-size: 1.15rem;
+  font-weight: 800;
+  line-height: 1.2;
+}
+
+.installer-card-meta,
+.installer-card-file {
+  color: var(--text);
+  font-size: .88rem;
+  line-height: 1.35;
+}
+
+.installer-card-file {
+  overflow-wrap: anywhere;
+  font-family: SFMono-Regular, Consolas, "Liberation Mono", monospace;
+  font-size: .78rem;
+}
+
+.home-installers-footer {
+  display: grid;
+  gap: 8px;
+  margin-top: 20px;
+}
+
+.home-all-downloads-link {
+  width: fit-content;
+  color: var(--link);
+  font-weight: 800;
+}
+
+.home-all-downloads-link:hover {
+  color: var(--link-hover);
+}
+
 #download-col-header {
   margin-left: 0px;
   margin-right: 0px;

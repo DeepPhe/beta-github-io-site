@@ -10,7 +10,7 @@ description: DeepPhe documentation guides for installation, desktop use, visuali
   <div class="grid">
     <a class="card" href="https://deepphe.github.io/installation/user/download">
       <h3>DeepPhe Installation Guide</h3>
-      <p>Download DeepPhe and start using the installed DeepPhe-XN and DeepPhe Visualizer pieces.</p>
+      <p>Download DeepPhe and start using the installed DeepPhe-XN and DeepPhe Visualizer 2 pieces.</p>
       <span class="go" aria-hidden="true">&rarr;</span>
     </a>
     <a class="card" href="https://deepphe.github.io/dphe-gui/">
@@ -20,7 +20,7 @@ description: DeepPhe documentation guides for installation, desktop use, visuali
     </a>
     <a class="card" href="https://deepphe.github.io/dphe-db-pipeline/">
       <h3>DeepPhe DB Pipeline</h3>
-      <p>Load DeepPhe output into the database for downstream DeepPhe Data API and DeepPhe Visualizer workflows.</p>
+      <p>Load DeepPhe output into the database for downstream DeepPhe Data API and DeepPhe Visualizer 2 workflows.</p>
       <span class="go" aria-hidden="true">&rarr;</span>
     </a>
     <a class="card" href="https://deepphe.github.io/dphe-data-api/">
@@ -29,8 +29,8 @@ description: DeepPhe documentation guides for installation, desktop use, visuali
       <span class="go" aria-hidden="true">&rarr;</span>
     </a>
     <a class="card" href="https://deepphe.github.io/DeepPhe-Visualizer-v2/">
-      <h3>DeepPhe Visualizer User Guide</h3>
-      <p>Explore extracted cancer phenotypes in the web visualizer.</p>
+      <h3>DeepPhe Visualizer 2 User Guide</h3>
+      <p>Explore extracted cancer phenotypes in the web app.</p>
       <span class="go" aria-hidden="true">&rarr;</span>
     </a>
   </div>

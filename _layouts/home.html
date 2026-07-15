@@ -44,9 +44,17 @@ bodyClass: page-home
 
 <div class="intro">
     <div class="container">
-        <div class="row content section section-with-bottom-air">
+        <div class="row content section section-with-bottom-air home-installers">
             <div class="col-md-12">
-                {%- include downloads.html %}
+                <header class="home-installers-header">
+                    <h2>Download DeepPhe</h2>
+                    <p>Choose the installer for your operating system.</p>
+                </header>
+                {%- include installer-buttons.html product_id="xn" %}
+                <div class="home-installers-footer">
+                    <a class="home-all-downloads-link" href="{{ '/downloads/' | relative_url }}">All downloads &amp; source code &rarr;</a>
+                    <p>Source code, examples, DeepPhe DB Pipeline, DeepPhe Data API, and DeepPhe-CR are available on the downloads page.</p>
+                </div>
             </div>
         </div>
     </div>
