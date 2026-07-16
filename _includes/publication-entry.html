@@ -1,5 +1,17 @@
 {% assign item = include.item %}
 {% assign heading_level = include.heading_level | default: 4 %}
+{% assign journal_types = "journal,preprint" | split: "," %}
+{% assign presentation_types = "conference,talk,panel,pres" | split: "," %}
+{% assign publication_category = item.type %}
+{% if journal_types contains item.type %}
+{% assign publication_category = "journal" %}
+{% elsif presentation_types contains item.type %}
+{% assign publication_category = "presentation" %}
+{% endif %}
+{% assign type_label = item.type | capitalize %}
+{% if item.type == "pres" %}
+{% assign type_label = "Presentation" %}
+{% endif %}
 {% assign track_entry = true %}
 {% if include.track == false %}
 {% assign track_entry = false %}
@@ -12,11 +24,11 @@
 {% endcapture %}
 {% assign current_year = site.time | date: "%Y" | plus: 0 %}
 
-<article class="publication-entry"{% if track_entry %} data-publication-entry data-type="{{ item.type }}" data-search="{{ search_blob | strip_newlines | escape }}"{% endif %}>
+<article class="publication-entry"{% if track_entry %} data-publication-entry data-type="{{ item.type }}" data-category="{{ publication_category }}" data-search="{{ search_blob | strip_newlines | escape }}"{% endif %} data-cite-type="{{ item.type | escape }}" data-cite-title="{{ item.title | escape }}" data-cite-authors="{{ item.authors | escape }}" data-cite-year="{{ item.year | escape }}" data-cite-venue="{{ item.venue | escape }}" data-cite-location="{{ item.location | escape }}" data-cite-doi="{{ item.doi | escape }}" data-cite-pmid="{{ item.pmid | escape }}" data-cite-pmcid="{{ item.pmcid | escape }}" data-cite-url="{{ item.url | escape }}">
   <h{{ heading_level }} class="publication-title">{{ item.title }}</h{{ heading_level }}>
   <p class="publication-authors">{{ item.authors }}</p>
   <div class="publication-meta">
-    <span class="publication-badge publication-badge-{{ item.type }}">{{ item.type | capitalize }}</span>
+    <span class="publication-badge publication-badge-{{ item.type }}">{{ type_label }}</span>
 {% if item.year == current_year %}
     <span class="publication-new">New</span>
 {% endif %}
@@ -41,6 +53,19 @@
 {% endif %}
       <a href="{{ item.url }}">{{ url_label }}</a>
 {% endif %}
+      <span class="publication-cite" data-publication-cite>
+        <button class="publication-cite-toggle" type="button" data-cite-toggle aria-expanded="false">Cite</button>
+        <span class="publication-cite-menu" role="menu" data-cite-menu hidden>
+          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
+          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
+          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        </span>
+      </span>
     </span>
   </div>
 {% if item.presented_at %}

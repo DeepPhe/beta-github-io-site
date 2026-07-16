@@ -11,9 +11,6 @@
 
   <link href="/beta-github-io-site/assets/css/bootstrap.min.css" rel="stylesheet">
   <link href="/beta-github-io-site/assets/css/bootstrap-utilities.min.css" rel="stylesheet">
-  <script src="/beta-github-io-site/assets/js/jquery.min.js"></script>
-  <script src="/beta-github-io-site/assets/js/bootstrap.min.js"></script>
-  <script src="/beta-github-io-site/assets/js/bootstrap.bundle.min.js"></script>
   <title>Software | DeepPhe</title>
   <meta name="viewport" content="width=device-width, initial-scale=1" />
   <link rel="icon" type="image/svg+xml" href="/beta-github-io-site/images/favicon-32x32.svg">
@@ -28,12 +25,12 @@
   <meta property="og:title" content="Software | DeepPhe" />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://deepphe.github.io/beta-github-io-site/software/" />
-  <meta property="og:image" content="https://deepphe.github.io/beta-github-io-site/images/illustrations/Splash.png" />
+  <meta property="og:image" content="https://deepphe.github.io/beta-github-io-site/images/illustrations/DeepPhe-Splash.svg" />
   <meta property="og:description" content="A Natural Language Processing System for Extracting Cancer Phenotypes from Clinical Records" />
   <meta name="twitter:card" content="summary_large_image" />
   <meta name="twitter:title" content="Software | DeepPhe" />
   <meta name="twitter:description" content="A Natural Language Processing System for Extracting Cancer Phenotypes from Clinical Records" />
-  <meta name="twitter:image" content="https://deepphe.github.io/beta-github-io-site/images/illustrations/Splash.png" />
+  <meta name="twitter:image" content="https://deepphe.github.io/beta-github-io-site/images/illustrations/DeepPhe-Splash.svg" />
   <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
 
 </head>
@@ -55,19 +52,19 @@
     </li>
 
     <li class="">
-      <a href="/beta-github-io-site/videos/">Videos</a>
-    </li>
-
-    <li class="">
       <a href="/beta-github-io-site/downloads/">Downloads</a>
     </li>
 
     <li class="">
-      <a href="/beta-github-io-site/papers/">Papers</a>
+      <a href="/beta-github-io-site/documentation/">Documentation</a>
     </li>
 
     <li class="">
-      <a href="/beta-github-io-site/documentation/">Documentation</a>
+      <a href="/beta-github-io-site/videos/">Video</a>
+    </li>
+
+    <li class="">
+      <a href="/beta-github-io-site/papers/">Papers</a>
     </li>
 
   </ul>
@@ -77,10 +74,10 @@
     <header class='header'>
   <div class="container">
     <div class="logo">
-      <a href="/beta-github-io-site/" aria-label="DeepPhe home"><img height="36px" alt="" src="/beta-github-io-site/images/logo/DeepPhe.svg" /></a>
+      <a href="/beta-github-io-site/" aria-label="DeepPhe home"><img height="36px" alt="" src="/beta-github-io-site/images/logo/DeepPhe-Name-Only.svg" /></a>
     </div>
     <div class="logo-mobile">
-      <a href="/beta-github-io-site/" aria-label="DeepPhe home"><img alt="" src="/beta-github-io-site/images/logo/DeepPhe.svg" /></a>
+      <a href="/beta-github-io-site/" aria-label="DeepPhe home"><img alt="" src="/beta-github-io-site/images/logo/DeepPhe-Name-Only.svg" /></a>
     </div>
 
 <div id="main-menu" class="main-menu">
@@ -100,19 +97,19 @@
     </li>
 
     <li class="">
-      <a href="/beta-github-io-site/videos/">Videos</a>
-    </li>
-
-    <li class="">
       <a href="/beta-github-io-site/downloads/">Downloads</a>
     </li>
 
     <li class="">
-      <a href="/beta-github-io-site/papers/">Papers</a>
+      <a href="/beta-github-io-site/documentation/">Documentation</a>
     </li>
 
     <li class="">
-      <a href="/beta-github-io-site/documentation/">Documentation</a>
+      <a href="/beta-github-io-site/videos/">Video</a>
+    </li>
+
+    <li class="">
+      <a href="/beta-github-io-site/papers/">Papers</a>
     </li>
 
   </ul>
@@ -181,14 +178,15 @@ treatment, etc.).</p>
           <h2 class="service-title">
             <a href="/beta-github-io-site/services/deepphe-xn/">DeepPhe-XN</a>
           </h2>
-          <p><p>The DeepPhe tool for Translational Research (DeepPhe-XN) builds upon the base DeepPhe platform to provide extensive information useful for translational cancer research. Results from processing are stored in a Neo4J database that can be utilized by DeepPhe-Viz.</p>
+          <p><p>DeepPhe-XN builds upon the base DeepPhe platform to provide extensive information useful for translational cancer research. Results from processing are stored in a Sqlite database that can be utilized by DeepPhe Visualizer 2.</p>
 
 <p>There is a <a href="https://github.com/DeepPhe/DeepPhe-Release/wiki">DeepPhe-XN WIKI</a> with information on installation and use.</p>
+
+<p>Documentation: <a href="https://deepphe.github.io/installation/">DeepPhe Installation Guide</a>, <a href="https://deepphe.github.io/dphe-gui/">DeepPhe Desktop GUI Guide</a>, and <a href="https://deepphe.github.io/dphe-db-pipeline/">DeepPhe DB Pipeline</a> for loading DeepPhe-XN output into the database.</p>
 
 <p>Supported by the <a href="https://www.cancer.gov">National Cancer Institute’s</a> 
 <a href="https://itcr.cancer.gov">Information Technology for Cancer Research (ITCR) initiative</a> 
 (Grant #U24CA248010).</p>
-
 </p>
         </div>
       </div>
@@ -198,16 +196,18 @@ treatment, etc.).</p>
       <div class="service service-summary">
         <div class="service-content content">
           <h2 class="service-title">
-            <a href="/beta-github-io-site/services/deepphe-viz/">DeepPhe-Viz</a>
+            <a href="/beta-github-io-site/services/deepphe-viz/">DeepPhe Visualizer 2</a>
           </h2>
-          <p><p>DeepPhe results that are stored in a Neo4J database such as those created by DeepPhe-XN 
+          <p><p>DeepPhe results that are stored in a Sqlite database such as those created by DeepPhe-XN
 can be utilized with the 
-<a href="https://github.com/DeepPhe/DeepPhe-Visualizer-v2">DeepPhe visual analytics tool</a> (DeepPhe-Viz), 
+<a href="https://github.com/DeepPhe/DeepPhe-Visualizer-v2">DeepPhe Visualizer 2</a>,
 which provides a web-based interface to data, supporting
 review of both cohorts and individual patient records.</p>
 
-<p>See the <a href="https://deepphe.github.io/DeepPhe-Visualizer-v2/">DeepPhe Visualizer User Guide</a>
+<p>See the <a href="https://deepphe.github.io/DeepPhe-Visualizer-v2/">DeepPhe Visualizer 2 User Guide</a>
 for installation and usage documentation.</p>
+
+<p>Documentation: <a href="https://deepphe.github.io/dphe-data-api/">DeepPhe Data API</a> for the API layer that serves the database read by DeepPhe Visualizer 2.</p>
 
 <p>Supported by the <a href="https://www.cancer.gov">National Cancer Institute’s</a>
 <a href="https://itcr.cancer.gov">Information Technology for Cancer Research (ITCR) initiative</a> 
@@ -223,8 +223,7 @@ for installation and usage documentation.</p>
           <h2 class="service-title">
             <a href="/beta-github-io-site/services/deepphe-cr/">DeepPhe-CR</a>
           </h2>
-          <p><p>The DeepPhe tool for Cancer Registries (DeepPhe-CR) 
-builds upon the base DeepPhe platform to provide REST-APIs 
+          <p><p>DeepPhe-CR builds upon the base DeepPhe platform to provide REST-APIs
 for submissions of documents to the DeepPhe pipeline and return of extracted results,
 with the goal of providing DeepPhe services to tools for cancer patient data abstraction. 
 Developed in support of cancer registries from the NCI
@@ -287,8 +286,7 @@ DeepPhe-CR has been developed in partnership with the
 
 
 
-          <div class="copyright">Copyright 2026</div>
-
+          <div class="copyright">&copy; 2016-2026 Boston Children's Hospital and University of Pittsburgh</div>
         </div>
       </div>
     </div>

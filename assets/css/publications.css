@@ -1,3 +1,44 @@
+.publications-view-toggle {
+  display: inline-flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin: 0 0 28px;
+  padding: 4px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
+.publications-view-button {
+  color: var(--text-muted);
+  background: transparent;
+  border: 1px solid transparent;
+  border-radius: 6px;
+  padding: 8px 16px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.publications-view-button[aria-selected="true"],
+.publications-view-button:hover {
+  color: var(--text);
+  background: var(--surface-2);
+  border-color: var(--brand);
+}
+
+.publications-panel[hidden] {
+  display: none;
+}
+
+.publications-all-panel ol {
+  padding-left: 1.4rem;
+}
+
+.publications-all-panel li {
+  margin-bottom: 10px;
+  line-height: 1.55;
+}
+
 .publications {
   color: var(--text);
 }
@@ -186,7 +227,8 @@
 
 .publication-badge-conference,
 .publication-badge-talk,
-.publication-badge-panel {
+.publication-badge-panel,
+.publication-badge-pres {
   color: var(--text);
   background: transparent;
   border: 1px solid var(--brand);
@@ -208,22 +250,69 @@
   gap: 6px;
 }
 
-.publication-links a {
+.publication-links a,
+.publication-cite-toggle {
   color: var(--link);
+  background: transparent;
   border: 1px solid var(--border);
   border-radius: 999px;
   padding: 2px 8px;
+  font: inherit;
   text-decoration: none;
+  cursor: pointer;
 }
 
-.publication-links a:hover {
+.publication-links a:hover,
+.publication-cite-toggle:hover,
+.publication-cite-toggle[aria-expanded="true"] {
   color: var(--link-hover);
   border-color: var(--brand);
   text-decoration: none;
 }
 
+.publication-cite {
+  position: relative;
+  display: inline-flex;
+}
+
+.publication-cite-menu {
+  position: absolute;
+  top: calc(100% + 6px);
+  right: 0;
+  z-index: 20;
+  display: grid;
+  min-width: 168px;
+  padding: 6px;
+  background: var(--surface);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+  box-shadow: 0 12px 28px rgba(0, 0, 0, 0.18);
+}
+
+.publication-cite-menu[hidden] {
+  display: none;
+}
+
+.publication-cite-menu button {
+  width: 100%;
+  color: var(--text);
+  background: transparent;
+  border: 0;
+  border-radius: 6px;
+  padding: 7px 9px;
+  font: inherit;
+  text-align: left;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.publication-cite-menu button:hover {
+  background: var(--surface-2);
+}
+
 .publications a:focus-visible,
 .publications button:focus-visible,
+.publications-view-button:focus-visible,
 .publications input:focus-visible {
   outline: 3px solid var(--link-hover);
   outline-offset: 3px;
@@ -242,6 +331,9 @@
 
 @media (prefers-reduced-motion: no-preference) {
   .publications-filter,
+  .publications-view-button,
+  .publication-cite-toggle,
+  .publication-cite-menu button,
   .publication-links a {
     transition: border-color 120ms ease, background-color 120ms ease, color 120ms ease;
   }

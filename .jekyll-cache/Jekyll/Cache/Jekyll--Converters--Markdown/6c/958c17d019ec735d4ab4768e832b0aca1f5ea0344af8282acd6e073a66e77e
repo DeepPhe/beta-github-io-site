@@ -1,5 +1,4 @@
-I"g
-<h1 id="deepphe-for-translational-research-deepphe-xn">DeepPhe for Translational Research (DeepPhe-XN)</h1>
+I"¥	<h1 id="deepphe-xn">DeepPhe-XN</h1>
 
 <p>The complexities of cancer care create significant challenges for the extraction of information for
 retrospective research. As patients progress through diagnosis to treatment and subsequent monitoring,
@@ -23,9 +22,9 @@ relationships as needed to support retrospective research. We expect that DeepPh
 by clinicians or researchers with appropriate permissions to read notes de-identified by honest brokers
 or through other appropriate means.</p>
 
-<h1 id="deepphe-for-cancer-registries-deepphe-cr">DeepPhe for Cancer Registries (DeepPhe-CR)</h1>
+<h1 id="deepphe-cr">DeepPhe-CR</h1>
 
-<p>The Cancer Deep Phenotype Extraction for the Cancer Registry (DeepPhe-CR) project strives to use 
+<p>The DeepPhe-CR project strives to use
 Natural Language Processing (NLP) and Ontology Based Summarization (OBS) to extract key cancer attributes
 from clinical notes, and to use those attributes to increase the efficacy and efficiency of cancer registry
 data abstraction processes. Achieving this goal requires the development of clear architectures and
