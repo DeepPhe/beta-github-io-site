@@ -336,6 +336,13 @@ $lightlink: $link;
   fill: currentColor;
 }
 
+.installer-card-icon .fa-linux {
+  width: 56px;
+  font-size: 56px;
+  line-height: 1;
+  text-align: center;
+}
+
 .installer-card-copy {
   display: grid;
   gap: 5px;
@@ -545,6 +552,13 @@ $lightlink: $link;
 
 .download-card-icon svg {
   fill: currentColor;
+}
+
+.download-card-icon .fa-linux {
+  width: 44px;
+  font-size: 44px;
+  line-height: 1;
+  text-align: center;
 }
 
 .download-card-text {

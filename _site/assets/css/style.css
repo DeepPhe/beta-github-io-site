@@ -4505,6 +4505,8 @@ readers do not read off random characters that represent icons */
 
 .installer-card-icon svg { fill: currentColor; }
 
+.installer-card-icon .fa-linux { width: 56px; font-size: 56px; line-height: 1; text-align: center; }
+
 .installer-card-copy { display: grid; gap: 5px; min-width: 0; }
 
 .installer-recommended-badge { width: fit-content; padding: 3px 8px; color: var(--bg); background: var(--amber); border-radius: 999px; font-size: .72rem; font-weight: 700; line-height: 1.2; }
@@ -4572,6 +4574,8 @@ readers do not read off random characters that represent icons */
 .download-card-icon { display: inline-flex; color: var(--link); }
 
 .download-card-icon svg { fill: currentColor; }
+
+.download-card-icon .fa-linux { width: 44px; font-size: 44px; line-height: 1; text-align: center; }
 
 .download-card-text { display: grid; gap: 4px; min-width: 0; }
 
