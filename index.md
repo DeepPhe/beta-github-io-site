@@ -15,3 +15,5 @@ A Natural Language Processing System for Extracting Cancer Phenotypes from Clini
 DeepPhe tools combine advanced NLP methods, summarization, data
 models, and visual analytics tools to help researchers easily
 understand complex cancer cases and cohorts.
+
+Choose DeepPhe-Translational (XN) for translational studies and research cohorts, or DeepPhe-CR Final for cancer registry applications and registrar workflows.
