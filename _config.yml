@@ -51,3 +51,5 @@ exclude:
   - LICENSE
   - README.md
   - todo.md
+  - duplicates-merged.md
+  - AGENTS.md
