@@ -10,7 +10,7 @@ description: DeepPhe documentation guides for installation, desktop use, visuali
   <div class="grid">
     <a class="card" href="https://deepphe.github.io/installation/user/download">
       <h3>DeepPhe Installation Guide</h3>
-      <p>Download DeepPhe and start using the installed DeepPhe-XN and DeepPhe Visualizer 2 pieces.</p>
+      <p>Download DeepPhe and start using the installed DeepPhe-Translational (XN) and DeepPhe Visualizer 2 pieces.</p>
       <span class="go" aria-hidden="true">&rarr;</span>
     </a>
     <a class="card" href="https://deepphe.github.io/dphe-gui/">

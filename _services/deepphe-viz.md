@@ -6,7 +6,7 @@ weight: 3
 layout: service
 ---
 
-DeepPhe results that are stored in a Sqlite database such as those created by DeepPhe-XN
+DeepPhe results that are stored in a Sqlite database such as those created by DeepPhe-Translational (XN)
 can be utilized with the 
 [DeepPhe Visualizer 2](https://github.com/DeepPhe/DeepPhe-Visualizer-v2),
 which provides a web-based interface to data, supporting

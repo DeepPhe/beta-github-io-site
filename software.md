@@ -21,4 +21,11 @@ DeepPhe can provide summary phenotype and patient information as well as facilit
 Built on the widely-used [cTAKES](http://ctakes.apache.org) NLP platform, DeepPhe can extract tumor characteristics, treatments, biomarkers and comorbidity information, as well as classify clinical notes in to treatment episodes.
 DeepPhe can produce results many output formats, as well as store information in a graph database supported by a REST API.
 
+## Choosing a DeepPhe release
+
+- **DeepPhe-Translational (XN)** - for translational studies and research cohorts.
+- **DeepPhe-CR Final** - for cancer registry applications and registrar workflows.
+
+DeepPhe Base is the underlying platform these releases are built on; it is not a separate release you choose. DeepPhe Visualizer 2 is a companion viewer for exploring DeepPhe-Translational results.
+
 <!--- The details in the old Information Model paper are nowhere near accurate anymore.  I moved the link to the papers page.  spf  -->

@@ -5,7 +5,7 @@ layout: papers
 description: project missions
 ---
 
-# DeepPhe-XN
+# DeepPhe-Translational (XN)
 
 The complexities of cancer care create significant challenges for the extraction of information for
 retrospective research. As patients progress through diagnosis to treatment and subsequent monitoring,
@@ -30,7 +30,7 @@ by clinicians or researchers with appropriate permissions to read notes de-ident
 or through other appropriate means.
 
    
-# DeepPhe-CR
+# DeepPhe-CR Final
    
    
 The DeepPhe-CR project strives to use

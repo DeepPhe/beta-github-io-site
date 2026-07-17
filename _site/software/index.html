@@ -64,7 +64,7 @@
     </li>
 
     <li class="">
-      <a href="/beta-github-io-site/papers/">Papers</a>
+      <a href="/beta-github-io-site/papers/">Publications</a>
     </li>
 
   </ul>
@@ -109,7 +109,7 @@
     </li>
 
     <li class="">
-      <a href="/beta-github-io-site/papers/">Papers</a>
+      <a href="/beta-github-io-site/papers/">Publications</a>
     </li>
 
   </ul>
@@ -135,6 +135,15 @@ DeepPhe can provide summary phenotype and patient information as well as facilit
 Built on the widely-used <a href="http://ctakes.apache.org">cTAKES</a> NLP platform, DeepPhe can extract tumor characteristics, treatments, biomarkers and comorbidity information, as well as classify clinical notes in to treatment episodes.
 DeepPhe can produce results many output formats, as well as store information in a graph database supported by a REST API.</p>
 
+<h2 id="choosing-a-deepphe-release">Choosing a DeepPhe release</h2>
+
+<ul>
+  <li><strong>DeepPhe-Translational (XN)</strong> - for translational studies and research cohorts.</li>
+  <li><strong>DeepPhe-CR Final</strong> - for cancer registry applications and registrar workflows.</li>
+</ul>
+
+<p>DeepPhe Base is the underlying platform these releases are built on; it is not a separate release you choose. DeepPhe Visualizer 2 is a companion viewer for exploring DeepPhe-Translational results.</p>
+
 <!--- The details in the old Information Model paper are nowhere near accurate anymore.  I moved the link to the papers page.  spf  -->
 
       </div>
@@ -145,60 +154,32 @@ DeepPhe can produce results many output formats, as well as store information in
 
 <div class="container">
   <div class="row section section-with-bottom-air">
-    
-    
     <div class="col-12 col-md-12 mb-3">
       <div class="service service-summary">
         <div class="service-content content">
           <h2 class="service-title">
-            <a href="/beta-github-io-site/services/deepphe-base/">DeepPhe (base)</a>
+            <a href="/beta-github-io-site/services/deepphe-xn/">DeepPhe-Translational (XN)</a>
           </h2>
-          <p><p>The base DeepPhe system processes corpora of patient notes,
-extracting mentions and attributes of key cancer concepts from individual notes and
-integrating the information within and across documents to build a
-high-level summary of a patient’s case. DeepPhe also contains
-machine learning trained classifiers capable of labeling individual
-notes according to the phase of treatment (pre-diagnostic, diagnostic,
-treatment, etc.).</p>
-
-<p>Supported by the <a href="https://www.cancer.gov">National Cancer Institute’s</a> 
-<a href="https://itcr.cancer.gov">Information Technology for Cancer Research (ITCR) initiative</a> 
-(Grant #U24CA248010) and the <a href="https://www.cancer.gov">National Cancer Institute’s</a>
-<a href="https://seer.cancer.gov">Surveillance, Epidemiology, and End Results (SEER) program</a>
- (Grant #UH3CA243120).</p>
-
-</p>
-        </div>
-      </div>
-    </div>
-    
-    <div class="col-12 col-md-12 mb-3">
-      <div class="service service-summary">
-        <div class="service-content content">
-          <h2 class="service-title">
-            <a href="/beta-github-io-site/services/deepphe-xn/">DeepPhe-XN</a>
-          </h2>
-          <p><p>DeepPhe-XN builds upon the base DeepPhe platform to provide extensive information useful for translational cancer research. Results from processing are stored in a Sqlite database that can be utilized by DeepPhe Visualizer 2.</p>
+          <p>DeepPhe-Translational (XN) is the DeepPhe release for translational studies. It builds upon the base DeepPhe platform to provide extensive information useful for translational cancer research. Results from processing are stored in a Sqlite database that can be utilized by DeepPhe Visualizer 2.</p>
 
 <p>There is a <a href="https://github.com/DeepPhe/DeepPhe-Release/wiki">DeepPhe-XN WIKI</a> with information on installation and use.</p>
 
 <p>Documentation: <a href="https://deepphe.github.io/installation/">DeepPhe Installation Guide</a>, <a href="https://deepphe.github.io/dphe-gui/">DeepPhe Desktop GUI Guide</a>, and <a href="https://deepphe.github.io/dphe-db-pipeline/">DeepPhe DB Pipeline</a> for loading DeepPhe-XN output into the database.</p>
 
-<p>Supported by the <a href="https://www.cancer.gov">National Cancer Institute’s</a> 
-<a href="https://itcr.cancer.gov">Information Technology for Cancer Research (ITCR) initiative</a> 
+<p>Supported by the <a href="https://www.cancer.gov">National Cancer Institute’s</a>
+<a href="https://itcr.cancer.gov">Information Technology for Cancer Research (ITCR) initiative</a>
 (Grant #U24CA248010).</p>
-</p>
+
         </div>
       </div>
     </div>
-    
     <div class="col-12 col-md-12 mb-3">
       <div class="service service-summary">
         <div class="service-content content">
           <h2 class="service-title">
             <a href="/beta-github-io-site/services/deepphe-viz/">DeepPhe Visualizer 2</a>
           </h2>
-          <p><p>DeepPhe results that are stored in a Sqlite database such as those created by DeepPhe-XN
+          <p>DeepPhe results that are stored in a Sqlite database such as those created by DeepPhe-Translational (XN)
 can be utilized with the 
 <a href="https://github.com/DeepPhe/DeepPhe-Visualizer-v2">DeepPhe Visualizer 2</a>,
 which provides a web-based interface to data, supporting
@@ -212,27 +193,28 @@ for installation and usage documentation.</p>
 <p>Supported by the <a href="https://www.cancer.gov">National Cancer Institute’s</a>
 <a href="https://itcr.cancer.gov">Information Technology for Cancer Research (ITCR) initiative</a> 
 (Grant #U24CA248010).</p>
-</p>
+
         </div>
       </div>
     </div>
-    
     <div class="col-12 col-md-12 mb-3">
       <div class="service service-summary">
         <div class="service-content content">
           <h2 class="service-title">
-            <a href="/beta-github-io-site/services/deepphe-cr/">DeepPhe-CR</a>
+            <a href="/beta-github-io-site/services/deepphe-cr/">DeepPhe-CR Final</a>
           </h2>
-          <p><p>DeepPhe-CR builds upon the base DeepPhe platform to provide REST-APIs
+          <p>DeepPhe-CR Final is the final DeepPhe release for cancer registry applications. It is intended for cancer registry workflows, registrar case abstraction, and integration with registry systems.</p>
+
+<p>DeepPhe-CR builds upon the base DeepPhe platform to provide REST-APIs
 for submissions of documents to the DeepPhe pipeline and return of extracted results,
-with the goal of providing DeepPhe services to tools for cancer patient data abstraction. 
+with the goal of providing DeepPhe services to tools for cancer patient data abstraction.
 Developed in support of cancer registries from the NCI
-<a href="https://seer.cancer.gov">Surveillance, Epidemiology, and End Results (SEER) Program</a>, 
-DeepPhe-CR provides web-services suitable for integration into existing registry 
+<a href="https://seer.cancer.gov">Surveillance, Epidemiology, and End Results (SEER) Program</a>,
+DeepPhe-CR provides web-services suitable for integration into existing registry
 case abstraction tools.<br />
 DeepPhe-CR tools are provided as a suite of Docker containers supporting ease
 of installation and operation.
-DeepPhe-CR has been developed in partnership with the 
+DeepPhe-CR has been developed in partnership with the
 <a href="https://www.kcr.uky.edu/">Kentucky Cancer Registry</a>.</p>
 
 <p>There is a <a href="https://github.com/DeepPhe/DeepPhe-CR-Release/wiki">DeepPhe-CR WIKI</a> with information on installation and use.</p>
@@ -241,11 +223,9 @@ DeepPhe-CR has been developed in partnership with the
 <a href="https://seer.cancer.gov">Surveillance, Epidemiology, and End Results (SEER) Program</a> 
  (Grant #UH3CA243120).</p>
 
-</p>
         </div>
       </div>
     </div>
-    
   </div>
 </div>
 

@@ -22,18 +22,20 @@ bodyClass: page-services-list
 
 <div class="container">
   <div class="row section section-with-bottom-air">
-    {% assign weighted_services = site.services | sort: "weight" %}
-    {% for service in weighted_services %}
+    {%- assign weighted_services = site.services | sort: "weight" %}
+    {%- for service in weighted_services %}
+    {%- unless service.listed == false %}
     <div class="col-12 col-md-12 mb-3">
       <div class="service service-summary">
         <div class="service-content content">
           <h2 class="service-title">
             <a href="{{ service.url | relative_url }}">{{ service.title }}</a>
           </h2>
-          <p>{{ service.content | markdownify }}</p>
+          {{ service.content | markdownify }}
         </div>
       </div>
     </div>
-    {% endfor %}
+    {%- endunless %}
+    {%- endfor %}
   </div>
 </div>
