@@ -1,6 +1,6 @@
 products:
   - id: xn
-    name: "DeepPhe-Translational (XN)"
+    name: "DeepPhe Translational"
     blurb: "Release for translational studies and research cohorts."
     info_url: "https://github.com/DeepPhe/DeepPhe-Release/wiki"
     groups:

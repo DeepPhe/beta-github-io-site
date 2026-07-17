@@ -1,14 +1,14 @@
 ---
-title: "DeepPhe-Translational (XN)"
+title: "DeepPhe Translational"
 link: "https://github.com/DeepPhe/DeepPhe-Release/releases/tag/xn0.5.9"
 featured: true
 weight: 2
 layout: service
 ---
 
-DeepPhe-Translational (XN) is the DeepPhe release for translational studies. It builds upon the base DeepPhe platform to provide extensive information useful for translational cancer research. Results from processing are stored in a Sqlite database that can be utilized by DeepPhe Visualizer 2.
+DeepPhe Translational is the DeepPhe release for translational studies. It builds upon the base DeepPhe platform to provide extensive information useful for translational cancer research. Results from processing are stored in a SQLite database that can be utilized by DeepPhe Visualizer 2.
 
-There is a [DeepPhe-XN WIKI](https://github.com/DeepPhe/DeepPhe-Release/wiki) with information on installation and use. 
+There is a [DeepPhe-XN wiki](https://github.com/DeepPhe/DeepPhe-Release/wiki) with information on installation and use.
 
 Documentation: [DeepPhe Installation Guide](https://deepphe.github.io/installation/), [DeepPhe Desktop GUI Guide](https://deepphe.github.io/dphe-gui/), and [DeepPhe DB Pipeline](https://deepphe.github.io/dphe-db-pipeline/) for loading DeepPhe-XN output into the database.
 

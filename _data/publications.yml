@@ -144,6 +144,7 @@
   year: 2023
   type: conference
   venue: "ISMB Conference Technical Demo"
+  url: "https://www.youtube.com/watch?v=Q59fUNVUUIk"
   presented_at:
     - venue: "ISMB/ECCB Technology Track"
       year: 2023
@@ -182,7 +183,7 @@
   type: conference
   venue: "ISMB/ECCB Technology Track"
   location: "Lyon, France"
-  url: "https://www.iscb.org/ismbeccb2023-programme/tech-track"
+  url: "https://www.youtube.com/watch?v=wI5VRdERp-Y"
   original_ids: [24]
 
 - title: "Two-Stage Fine-Tuning for Improved Bias and Variance for Large Pretrained Language Models"
@@ -257,7 +258,7 @@
   year: 2019
   type: preprint
   venue: "arXiv"
-  url: "https://arxiv.org/ftp/arxiv/papers/1912/1912.12371.pdf"
+  url: "https://arxiv.org/abs/1912.12371"
   original_ids: [37]
 
 - title: "Use of Natural Language Processing to Extract Clinical Cancer Phenotypes from Electronic Medical Records"

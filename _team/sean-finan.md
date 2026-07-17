@@ -1,14 +1,17 @@
 ---
 title: "Sean Finan"
-date: 2018-11-19T10:47:58+10:00
-draft: false
 image: ""
-jobtitle: "Developer"
-linkedinurl: ""
-weight: 5
+jobtitle: "Lead and Principal Developer"
+summary: "Lead and principal developer responsible for the design and implementation of DeepPhe's core software."
+institution: "Boston Children's Hospital"
+institutionurl: "https://www.childrenshospital.org"
+profileurl: "https://research.childrenshospital.org/researchers/sean-finan"
+group: "technical-leadership"
+listed: true
+weight: 4
 layout: team
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
+Sean Finan is the lead and principal developer of DeepPhe and a senior software developer in the Natural Language Processing Laboratory at Boston Children's Hospital.
 
-Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+He leads the design and implementation of DeepPhe's core software and brings extensive experience developing scientific and clinical NLP systems. He is also a long-time contributor to Apache cTAKES and its developer community.

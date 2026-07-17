@@ -5,23 +5,29 @@ main:
   - name: "Mission"
     url: "/mission/"
     weight: 3
+  - name: "Team"
+    url: "/team/"
+    weight: 4
   - name: "Software"
     url: "/software/"
-    weight: 4
+    weight: 5
   - name: "Downloads"
     url: "/downloads/"
-    weight: 5
+    weight: 6
   - name: "Documentation"
     url: "/documentation/"
-    weight: 6
+    weight: 7
   - name: "Video"
     url: "/videos/"
-    weight: 7
+    weight: 8
   - name: "Publications"
     url: "/papers/"
-    weight: 8
+    weight: 9
 
 footer:
   - name: "Home"
     url: "/"
     weight: 1
+  - name: "Team"
+    url: "/team/"
+    weight: 2

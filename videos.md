@@ -13,7 +13,11 @@ description: DeepPhe introductory video presentation.
   <section class="video-feature" aria-labelledby="video-title-1">
     <div class="video-caption">
       <h1 id="video-title-1">{{ v.title }}</h1>
+{% if v.event %}
+      <p>{{ v.event }}</p>
+{% else %}
       <p>{{ v.venue }} &middot; {{ v.year }}</p>
+{% endif %}
 {% if v.description and v.description != "" %}
       <p class="video-description">{{ v.description }}</p>
 {% endif %}
@@ -32,7 +36,11 @@ description: DeepPhe introductory video presentation.
     <article class="video-card" aria-labelledby="video-title-{{ forloop.index }}">
       <div class="video-caption">
         <h2 id="video-title-{{ forloop.index }}">{{ v.title }}</h2>
+{% if v.event %}
+        <p>{{ v.event }}</p>
+{% else %}
         <p>{{ v.venue }} &middot; {{ v.year }}</p>
+{% endif %}
 {% if v.description and v.description != "" %}
         <p class="video-description">{{ v.description }}</p>
 {% endif %}

@@ -31,7 +31,8 @@
   <meta name="twitter:image" content="https://deepphe.github.io/beta-github-io-site/images/illustrations/DeepPhe-Splash.svg" />
 </head>
 <body class='page '>
-  <div id="main-menu-mobile" class="main-menu-mobile">
+  <a class="skip-link" href="#main-content">Skip to main content</a>
+  <nav id="main-menu-mobile" class="main-menu-mobile" aria-label="Mobile">
 
   <ul>
 
@@ -43,8 +44,12 @@
       <a href="/beta-github-io-site/mission/">Mission</a>
     </li>
 
+    <li class="">
+      <a href="/beta-github-io-site/team/">Team</a>
+    </li>
+
     <li class="active">
-      <a href="/beta-github-io-site/software/">Software</a>
+      <a href="/beta-github-io-site/software/" aria-current="page">Software</a>
     </li>
 
     <li class="">
@@ -64,7 +69,7 @@
     </li>
 
   </ul>
-</div>
+</nav>
 
   <div id="wrapper" class="wrapper">
     <header class='header'>
@@ -76,7 +81,7 @@
       <a href="/beta-github-io-site/" aria-label="DeepPhe home"><img alt="" src="/beta-github-io-site/images/logo/DeepPhe-Name-Only.svg" /></a>
     </div>
 
-<div id="main-menu" class="main-menu">
+<nav id="main-menu" class="main-menu" aria-label="Primary">
 
   <ul>
 
@@ -88,8 +93,12 @@
       <a href="/beta-github-io-site/mission/">Mission</a>
     </li>
 
+    <li class="">
+      <a href="/beta-github-io-site/team/">Team</a>
+    </li>
+
     <li class="active">
-      <a href="/beta-github-io-site/software/">Software</a>
+      <a href="/beta-github-io-site/software/" aria-current="page">Software</a>
     </li>
 
     <li class="">
@@ -109,9 +118,9 @@
     </li>
 
   </ul>
-</div>
+</nav>
 
-<button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button" aria-label="Mobile Menu">
+<button id="toggle-main-menu-mobile" class="hamburger hamburger--slider" type="button" aria-label="Open menu" aria-controls="main-menu-mobile" aria-expanded="false">
   <span class="hamburger-box">
     <span class="hamburger-inner"></span>
   </span>
@@ -128,17 +137,17 @@
 
 <p>The DeepPhe software tools use a combination of natural language processing, machine learning, visual analytics, a rich ontology and ontology-based summarization to extract longitudinal histories from cancer clinical notes.<br />
 DeepPhe can provide summary phenotype and patient information as well as facilitate retrospective cancer cohort research. 
-Built on the widely-used <a href="http://ctakes.apache.org">cTAKES</a> NLP platform, DeepPhe can extract tumor characteristics, treatments, biomarkers and comorbidity information, as well as classify clinical notes in to treatment episodes.
+Built on the widely-used <a href="https://ctakes.apache.org">cTAKES</a> NLP platform, DeepPhe can extract tumor characteristics, treatments, biomarkers and comorbidity information, as well as classify clinical notes into treatment episodes.
 DeepPhe can produce results in many output formats, as well as store information in a graph database supported by a REST API.</p>
 
 <h2 id="choosing-a-deepphe-release">Choosing a DeepPhe release</h2>
 
 <ul>
-  <li><strong>DeepPhe-Translational (XN)</strong> - for translational studies and research cohorts.</li>
+  <li><strong>DeepPhe Translational</strong> - for translational studies and research cohorts.</li>
   <li><strong>DeepPhe-CR Final</strong> - for cancer registry applications and registrar workflows.</li>
 </ul>
 
-<p>DeepPhe Base is the underlying platform these releases are built on; it is not a separate release you choose. DeepPhe Visualizer 2 is a companion viewer for exploring DeepPhe-Translational results.</p>
+<p>DeepPhe Base is the underlying platform these releases are built on; it is not a separate release you choose. DeepPhe Visualizer 2 is a companion viewer for exploring DeepPhe Translational results.</p>
 
 <!--- The details in the old Information Model paper are nowhere near accurate anymore.  I moved the link to the papers page.  spf  -->
 
@@ -154,11 +163,11 @@ DeepPhe can produce results in many output formats, as well as store information
       <div class="service service-summary">
         <div class="service-content content">
           <h2 class="service-title">
-            <a href="/beta-github-io-site/services/deepphe-xn/">DeepPhe-Translational (XN)</a>
+            <a href="/beta-github-io-site/services/deepphe-xn/">DeepPhe Translational</a>
           </h2>
-          <p>DeepPhe-Translational (XN) is the DeepPhe release for translational studies. It builds upon the base DeepPhe platform to provide extensive information useful for translational cancer research. Results from processing are stored in a Sqlite database that can be utilized by DeepPhe Visualizer 2.</p>
+          <p>DeepPhe Translational is the DeepPhe release for translational studies. It builds upon the base DeepPhe platform to provide extensive information useful for translational cancer research. Results from processing are stored in a SQLite database that can be utilized by DeepPhe Visualizer 2.</p>
 
-<p>There is a <a href="https://github.com/DeepPhe/DeepPhe-Release/wiki">DeepPhe-XN WIKI</a> with information on installation and use.</p>
+<p>There is a <a href="https://github.com/DeepPhe/DeepPhe-Release/wiki">DeepPhe-XN wiki</a> with information on installation and use.</p>
 
 <p>Documentation: <a href="https://deepphe.github.io/installation/">DeepPhe Installation Guide</a>, <a href="https://deepphe.github.io/dphe-gui/">DeepPhe Desktop GUI Guide</a>, and <a href="https://deepphe.github.io/dphe-db-pipeline/">DeepPhe DB Pipeline</a> for loading DeepPhe-XN output into the database.</p>
 
@@ -175,7 +184,7 @@ DeepPhe can produce results in many output formats, as well as store information
           <h2 class="service-title">
             <a href="/beta-github-io-site/services/deepphe-viz/">DeepPhe Visualizer 2</a>
           </h2>
-          <p>DeepPhe results that are stored in a Sqlite database such as those created by DeepPhe-Translational (XN)
+          <p>DeepPhe results that are stored in a SQLite database such as those created by DeepPhe Translational
 can be utilized with the 
 <a href="https://github.com/DeepPhe/DeepPhe-Visualizer-v2">DeepPhe Visualizer 2</a>,
 which provides a web-based interface to data, supporting
@@ -201,19 +210,19 @@ for installation and usage documentation.</p>
           </h2>
           <p>DeepPhe-CR Final is the final DeepPhe release for cancer registry applications. It is intended for cancer registry workflows, registrar case abstraction, and integration with registry systems.</p>
 
-<p>DeepPhe-CR builds upon the base DeepPhe platform to provide REST-APIs
+<p>DeepPhe-CR builds upon the base DeepPhe platform to provide REST APIs
 for submissions of documents to the DeepPhe pipeline and return of extracted results,
 with the goal of providing DeepPhe services to tools for cancer patient data abstraction.
 Developed in support of cancer registries from the NCI
 <a href="https://seer.cancer.gov">Surveillance, Epidemiology, and End Results (SEER) Program</a>,
-DeepPhe-CR provides web-services suitable for integration into existing registry
+DeepPhe-CR provides web services suitable for integration into existing registry
 case abstraction tools.<br />
 DeepPhe-CR tools are provided as a suite of Docker containers supporting ease
 of installation and operation.
 DeepPhe-CR has been developed in partnership with the
 <a href="https://www.kcr.uky.edu/">Kentucky Cancer Registry</a>.</p>
 
-<p>There is a <a href="https://github.com/DeepPhe/DeepPhe-CR-Release/wiki">DeepPhe-CR WIKI</a> with information on installation and use.</p>
+<p>There is a <a href="https://github.com/DeepPhe/DeepPhe-CR-Release/wiki">DeepPhe-CR wiki</a> with information on installation and use.</p>
 
 <p>A collaboration with the <a href="https://www.cancer.gov">National Cancer Institute’s</a>
 <a href="https://seer.cancer.gov">Surveillance, Epidemiology, and End Results (SEER) Program</a> 
@@ -241,6 +250,10 @@ DeepPhe-CR has been developed in partnership with the
               <a href="/beta-github-io-site/">Home</a>
             </li>
 
+            <li class="">
+              <a href="/beta-github-io-site/team/">Team</a>
+            </li>
+
           </ul>
         </div>
       </div>
@@ -256,7 +269,7 @@ DeepPhe-CR has been developed in partnership with the
 
 <div class="social">
 
-    <a href="https://github.com/DeepPhe" target="_blank" rel="noopener noreferrer"><img src="/beta-github-io-site/images/social/github.svg" title="Github" alt="Github" /></a>
+    <a href="https://github.com/DeepPhe" target="_blank" rel="noopener noreferrer"><img src="/beta-github-io-site/images/social/github.svg" title="GitHub" alt="GitHub" /></a>
 
 </div>
 

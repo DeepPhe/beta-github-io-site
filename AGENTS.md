@@ -43,7 +43,10 @@ Use these checks after publication-page changes:
 ```bash
 bundle exec jekyll build
 node --check assets/js/publications.js
+node scripts/check-links.mjs _site
 ```
+
+Use `node scripts/check-links.mjs _site --external` when you also want to check external URLs. Some publishers and LinkedIn block automated checks with 401/403/429/999 responses; the script counts those as blocked instead of broken.
 
 Useful publication count checks:
 

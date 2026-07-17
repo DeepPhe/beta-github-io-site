@@ -68,6 +68,26 @@ $steel: $text;
 $foo: $danger;
 $lightlink: $link;
 
+.skip-link {
+  position: absolute;
+  top: -60px;
+  left: 8px;
+  z-index: 1000;
+  padding: 10px 16px;
+  color: $text;
+  background: $surface-2;
+  border: 2px solid $link;
+  border-radius: 6px;
+  text-decoration: none;
+}
+
+.skip-link:focus,
+.skip-link:focus-visible {
+  top: 8px;
+  outline: 3px solid $link-hover;
+  outline-offset: 2px;
+}
+
 .hp-paper-link{
   text-decoration: underline;
 }
@@ -124,7 +144,7 @@ $lightlink: $link;
 
 .doc-cards .grid {
   display: grid;
-  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(#{"min(260px, 100%)"}, 1fr));
   gap: 1.25rem;
   max-width: 1000px;
   margin-inline: auto;
@@ -154,7 +174,7 @@ $lightlink: $link;
   outline-offset: 2px;
 }
 
-.doc-cards a.card h3 {
+.doc-cards a.card h2 {
   margin: 0;
   color: var(--text);
   font-size: 1.15rem;
@@ -197,7 +217,7 @@ $lightlink: $link;
 
 .video-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(#{"min(280px, 100%)"}, 1fr));
   gap: 20px;
 }
 
@@ -271,7 +291,7 @@ $lightlink: $link;
 
 .installer-buttons {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(#{"min(220px, 100%)"}, 1fr));
   gap: 14px;
 }
 
@@ -291,8 +311,8 @@ $lightlink: $link;
 
 .installer-card:hover {
   color: var(--text);
-  background: var(--link);
-  border-color: var(--link-hover);
+  background: var(--brand-dim);
+  border-color: var(--link);
   text-decoration: none;
 }
 
@@ -488,7 +508,7 @@ $lightlink: $link;
 
 .downloads-assets {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(210px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(#{"min(210px, 100%)"}, 1fr));
   gap: 12px;
 }
 
@@ -715,5 +735,22 @@ body {
   }
   img {
       passing: 20px;
+  }
+}
+
+// Reduce excessive horizontal padding on small screens so no page needs
+// horizontal scrolling at 320 CSS pixels.
+@media (max-width: 600px) {
+  .section {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .papers-section {
+    padding-left: 16px;
+    padding-right: 16px;
+  }
+  .doc-cards {
+    padding-left: 1rem;
+    padding-right: 1rem;
   }
 }

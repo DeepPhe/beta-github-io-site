@@ -1,55 +1,127 @@
-.team-name a {
-  color: white !important;
+.team-page {
+  display: grid;
+  gap: 36px;
+}
+
+.team-page-header {
+  margin-top: 32px;
+}
+
+.team-page-header h1,
+.team-section h2,
+.team-support h2 {
+  color: $text;
+}
+
+.team-page-header p {
+  max-width: 780px;
+  margin-bottom: 0;
+  font-size: 1.1rem;
+}
+
+.team-section {
+  display: grid;
+  gap: 16px;
+}
+
+.team-section > h2 {
+  margin: 0;
+}
+
+.team-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 18px;
 }
 
 .team-summary {
-  color: white;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
+  display: grid;
+  grid-template-columns: auto minmax(0, 1fr);
+  align-content: start;
+  gap: 0 16px;
+  padding: 24px;
+  color: $text;
+  background: $surface;
+  border: 1px solid $border;
+  border-radius: 8px;
+
   .team-image {
-    height: 60px;
-    width: 60px;
-    margin-right: 10px;
-    border-radius: 50%;
+    grid-row: 1 / span 2;
+    width: 82px;
+    height: 82px;
     overflow: hidden;
+    border-radius: 50%;
+
     img {
-      width: 60px;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
     }
   }
+
   .team-meta {
-    flex: 1;
-    h2 {
-      margin: 0;
-      font-size: 22px;
-      font-weight: normal;
-    }
-    p {
-      color: $black;
-      text-transform: uppercase;
-      margin: 0;
-      font-size: 12px;
-      font-weight: 500;
+    min-width: 0;
+  }
+
+  .team-name {
+    margin: 0 0 5px;
+    font-size: 1.25rem;
+    line-height: 1.3;
+
+    a {
+      color: $text;
     }
   }
+
+  .team-description,
+  .team-institution {
+    margin: 0;
+    color: $text-muted;
+    font-size: .95rem;
+    line-height: 1.4;
+    text-transform: none;
+  }
+
+  .team-institution a {
+    color: $link;
+  }
+
   .team-content {
-    margin-top: 20px;
-    flex: 1 0 100%;
+    grid-column: 1 / -1;
+    margin: 20px 0 0;
+    color: $text-muted;
   }
 }
 
-.team-summary-large {
-  background-color: $white-offset;
-  padding: 30px;
-  border-radius: 3px;
-  .team-image {
-    height: 90px;
-    width: 90px;
-    margin-right: 20px;
-    border-radius: 50%;
-    overflow: hidden;
-    img {
-      width: 90px;
+.team-support {
+  margin: 0 0 32px;
+}
+
+.team-support h2:not(:first-child) {
+  margin-top: 32px;
+}
+
+.team-single-role {
+  margin-bottom: 4px;
+  color: $text;
+  font-weight: 700;
+}
+
+.team-single-institution {
+  margin-bottom: 24px;
+}
+
+@media (max-width: 420px) {
+  .team-grid {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .team-summary {
+    grid-template-columns: 1fr;
+
+    .team-image {
+      grid-row: auto;
+      margin-bottom: 14px;
     }
   }
 }

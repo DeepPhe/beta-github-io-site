@@ -37,6 +37,7 @@
 .publications-all-panel li {
   margin-bottom: 10px;
   line-height: 1.55;
+  overflow-wrap: anywhere;
 }
 
 .publications {
@@ -70,7 +71,7 @@
   align-items: center;
   gap: 10px;
   background: var(--surface);
-  border: 1px solid var(--border);
+  border: 1px solid var(--text-subtle);
   border-radius: 8px;
   padding: 10px 12px;
 }
@@ -89,7 +90,7 @@
 }
 
 .publications-search input::placeholder {
-  color: var(--text-subtle);
+  color: var(--text-muted);
 }
 
 .publications-filters {
@@ -168,6 +169,7 @@
 .publication-entry {
   padding: 18px 0;
   border-bottom: 1px solid var(--border);
+  overflow-wrap: anywhere;
 }
 
 .publication-entry[hidden],
