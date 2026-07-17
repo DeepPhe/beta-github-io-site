@@ -32,7 +32,7 @@
 </head>
 <body class='page '>
   <a class="skip-link" href="#main-content">Skip to main content</a>
-  <nav id="main-menu-mobile" class="main-menu-mobile" aria-label="Mobile">
+  <nav id="main-menu-mobile" class="main-menu-mobile" aria-label="Mobile" aria-hidden="true" inert>
 
   <ul>
 
@@ -128,22 +128,45 @@
   </div>
 </header>
 
-    <main id="main-content">
-      <div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+    <main id="main-content" tabindex="-1">
+      <div class="container standard-page-layout">
   <div class="row justify-content-start">
-    <div class="col-12 col-md-8">
-      <div class="team team-single">
-        <h1 class="title">John Levander</h1>
-        <p class="team-single-role">Developer and Designer</p>
+    <div class="col-12 col-xl-10">
+      <article class="team team-single">
+        <header class="team-single-header">
 
-        <div class="content"><p>John Levander is a DeepPhe contributor responsible for developing DeepPhe Visualizer 2, designing and maintaining the project website, and building the cross-platform DeepPhe installer.</p>
+          <div class="team-single-image">
+            <img alt="" src="/beta-github-io-site/images/team/john.png" />
+          </div>
+
+          <div class="team-single-meta">
+            <h1 class="title">John Levander</h1>
+            <p class="team-single-role">Software Developer</p>
+
+
+            <p class="team-single-institution">
+
+              <a href="https://www.dbmi.pitt.edu/">University of Pittsburgh Department of Biomedical Informatics</a>
+
+            </p>
+
+          </div>
+        </header>
+        <div class="team-single-body">
+          <div class="content"><p>John Levander is a DeepPhe contributor responsible for the DeepPhe Visualizer, project website, and cross-platform installer.</p>
 
 <p>His work also includes the DeepPhe Data API, database pipeline, distribution infrastructure, and supporting software that connects DeepPhe output to usable research tools.</p>
 </div>
 
-        <p><a href="https://github.com/JohnLevander">Official profile</a></p>
+          <div class="team-single-actions">
+            <a class="team-single-profile-link" href="https://www.dbmi.pitt.edu/directory/name/john-levander/" aria-label="View official profile for John Levander">
+              <span>Official profile</span>
+              <span aria-hidden="true">&rarr;</span>
+            </a>
+          </div>
 
-      </div>
+        </div>
+      </article>
     </div>
   </div>
 </div>
@@ -162,10 +185,6 @@
 
             <li class="">
               <a href="/beta-github-io-site/">Home</a>
-            </li>
-
-            <li class="">
-              <a href="/beta-github-io-site/team/">Team</a>
             </li>
 
           </ul>

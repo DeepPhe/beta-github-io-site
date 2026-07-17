@@ -8,7 +8,7 @@
       viewButtons.forEach(function (button) {
         var active = button.getAttribute("data-publications-view-button") === view;
         button.setAttribute("aria-selected", active ? "true" : "false");
-        button.setAttribute("aria-pressed", active ? "true" : "false");
+        button.setAttribute("tabindex", active ? "0" : "-1");
       });
 
       viewPanels.forEach(function (panel) {
@@ -19,6 +19,28 @@
     viewButtons.forEach(function (button) {
       button.addEventListener("click", function () {
         setActiveView(button.getAttribute("data-publications-view-button"));
+      });
+
+      button.addEventListener("keydown", function (event) {
+        var index = viewButtons.indexOf(button);
+        var nextIndex = -1;
+
+        if (event.key === "ArrowRight" || event.key === "ArrowDown") {
+          nextIndex = (index + 1) % viewButtons.length;
+        } else if (event.key === "ArrowLeft" || event.key === "ArrowUp") {
+          nextIndex = (index - 1 + viewButtons.length) % viewButtons.length;
+        } else if (event.key === "Home") {
+          nextIndex = 0;
+        } else if (event.key === "End") {
+          nextIndex = viewButtons.length - 1;
+        }
+
+        if (nextIndex !== -1) {
+          event.preventDefault();
+          var nextButton = viewButtons[nextIndex];
+          setActiveView(nextButton.getAttribute("data-publications-view-button"));
+          nextButton.focus();
+        }
       });
     });
 
@@ -431,7 +453,16 @@
           downloadCitation(getCitationData(entry), option.getAttribute("data-cite-format"));
         }
         closeCiteMenus();
+        toggle.focus();
       });
+    });
+
+    control.addEventListener("focusout", function () {
+      window.setTimeout(function () {
+        if (!control.contains(document.activeElement)) {
+          closeCiteMenus();
+        }
+      }, 0);
     });
   });
 
@@ -441,7 +472,11 @@
 
   document.addEventListener("keydown", function (event) {
     if (event.key === "Escape") {
+      var openToggle = root.querySelector('[data-cite-toggle][aria-expanded="true"]');
       closeCiteMenus();
+      if (openToggle) {
+        openToggle.focus();
+      }
     }
   });
 

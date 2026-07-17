@@ -18,6 +18,8 @@ if (menuTrigger && menuContainer) {
 
     function openMenu() {
         menuContainer.classList.add('open');
+        menuContainer.removeAttribute('inert');
+        menuContainer.setAttribute('aria-hidden', 'false');
         menuTrigger.classList.add('is-active');
         body.classList.add('lock-scroll');
         menuTrigger.setAttribute('aria-expanded', 'true');
@@ -33,6 +35,8 @@ if (menuTrigger && menuContainer) {
 
     function closeMenu(returnFocus) {
         menuContainer.classList.remove('open');
+        menuContainer.setAttribute('inert', '');
+        menuContainer.setAttribute('aria-hidden', 'true');
         menuTrigger.classList.remove('is-active');
         body.classList.remove('lock-scroll');
         menuTrigger.setAttribute('aria-expanded', 'false');

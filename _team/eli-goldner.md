@@ -1,13 +1,14 @@
 ---
 title: "Eli Goldner"
-image: ""
+image: "images/team/eli-goldner.jpg"
+imagesource: "https://www.brandeis.edu/graduate-affairs/news-events/stories/2025/cl-alums.html"
 jobtitle: "NLP Data Scientist"
 summary: "NLP data scientist who contributes to DeepPhe methods for extracting cancer treatment events and timelines from clinical text."
 institution: "Boston Children's Hospital"
 institutionurl: "https://www.childrenshospital.org"
-profileurl: "https://www.brandeis.edu/computer-science/computational-linguistics/masters/prospective-students/alumni-profiles.html"
+profileurl: "https://www.brandeis.edu/graduate-affairs/news-events/stories/2025/cl-alums.html"
 group: "contributors"
-listed: true
+listed: false
 weight: 5
 layout: team
 ---

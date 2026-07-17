@@ -1,12 +1,12 @@
 ---
-title: "DeepPhe-CR Final"
+title: "DeepPhe-CR"
 link: "https://github.com/DeepPhe/DeepPhe-CR-Release/releases/tag/v0.1.0-cr"
 featured: true
 weight: 4
 layout: service
 ---
 
-DeepPhe-CR Final is the final DeepPhe release for cancer registry applications. It is intended for cancer registry workflows, registrar case abstraction, and integration with registry systems.
+The DeepPhe-CR Final release is the project's final software release for cancer registry applications. DeepPhe-CR is intended for cancer registry workflows, registrar case abstraction, and integration with registry systems.
 
 DeepPhe-CR builds upon the base DeepPhe platform to provide REST APIs
 for submissions of documents to the DeepPhe pipeline and return of extracted results,
@@ -24,4 +24,4 @@ There is a [DeepPhe-CR wiki](https://github.com/DeepPhe/DeepPhe-CR-Release/wiki)
 
 A collaboration with the [National Cancer Institute's](https://www.cancer.gov)
 [Surveillance, Epidemiology, and End Results (SEER) Program](https://seer.cancer.gov) 
- (Grant #UH3CA243120).
+ (Grant #[UH3CA243120](https://reporter.nih.gov/project-details/10656293)).

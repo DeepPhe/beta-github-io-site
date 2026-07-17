@@ -24,8 +24,8 @@ DeepPhe can produce results in many output formats, as well as store information
 ## Choosing a DeepPhe release
 
 - **DeepPhe Translational** - for translational studies and research cohorts.
-- **DeepPhe-CR Final** - for cancer registry applications and registrar workflows.
+- **DeepPhe-CR** - for cancer registry applications and registrar workflows.
 
-DeepPhe Base is the underlying platform these releases are built on; it is not a separate release you choose. DeepPhe Visualizer 2 is a companion viewer for exploring DeepPhe Translational results.
+DeepPhe Base is the underlying platform these releases are built on; it is not a separate release you choose. DeepPhe Visualizer is a companion viewer for exploring DeepPhe Translational results.
 
 <!--- The details in the old Information Model paper are nowhere near accurate anymore.  I moved the link to the papers page.  spf  -->

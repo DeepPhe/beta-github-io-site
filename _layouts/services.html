@@ -7,7 +7,7 @@ bodyClass: page-services-list
 
 <div class="intro">
   <div class="container">
-    <div class="row justify-content-start section section-with-bottom-air">
+    <div class="row justify-content-start section">
       <div class="col-12 {% if page.carousels %}col-md-7 col-lg-6 order-2 order-md-1{% endif %} content">
         {{ content }}
       </div>
@@ -21,7 +21,7 @@ bodyClass: page-services-list
 </div>
 
 <div class="container">
-  <div class="row section section-with-bottom-air">
+  <div class="row section services-catalog">
     {%- assign weighted_services = site.services | sort: "weight" %}
     {%- for service in weighted_services %}
     {%- unless service.listed == false %}

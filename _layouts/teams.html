@@ -3,8 +3,9 @@ layout: default
 bodyClass: page-team-list
 ---
 
-<div class="container team-page pt-6 pb-6">
-  <header class="team-page-header section">
+<div class="container team-page">
+  <header class="team-page-header">
+    <p class="team-page-eyebrow">People behind DeepPhe</p>
     <h1>Team</h1>
     <p>{{ page.intro }}</p>
   </header>
@@ -45,7 +46,7 @@ bodyClass: page-team-list
   </section>
 {% endif %}
 
-  <section class="team-support section" aria-label="Institutions, collaboration, and funding">
+  <section class="team-support" aria-label="Institutions, collaboration, and funding">
     {{ content }}
   </section>
 </div>

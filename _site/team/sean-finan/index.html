@@ -32,7 +32,7 @@
 </head>
 <body class='page '>
   <a class="skip-link" href="#main-content">Skip to main content</a>
-  <nav id="main-menu-mobile" class="main-menu-mobile" aria-label="Mobile">
+  <nav id="main-menu-mobile" class="main-menu-mobile" aria-label="Mobile" aria-hidden="true" inert>
 
   <ul>
 
@@ -128,28 +128,41 @@
   </div>
 </header>
 
-    <main id="main-content">
-      <div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+    <main id="main-content" tabindex="-1">
+      <div class="container standard-page-layout">
   <div class="row justify-content-start">
-    <div class="col-12 col-md-8">
-      <div class="team team-single">
-        <h1 class="title">Sean Finan</h1>
-        <p class="team-single-role">Lead and Principal Developer</p>
+    <div class="col-12 col-xl-10">
+      <article class="team team-single">
+        <header class="team-single-header team-single-header-no-image">
 
-        <p class="team-single-institution">
+          <div class="team-single-meta">
+            <h1 class="title">Sean Finan</h1>
+            <p class="team-single-role">Principal Engineer</p>
 
-          <a href="https://www.childrenshospital.org">Boston Children's Hospital</a>
 
-        </p>
+            <p class="team-single-institution">
 
-        <div class="content"><p>Sean Finan is the lead and principal developer of DeepPhe and a senior software developer in the Natural Language Processing Laboratory at Boston Children’s Hospital.</p>
+              <a href="https://www.childrenshospital.org">Boston Children's Hospital</a>
 
-<p>He leads the design and implementation of DeepPhe’s core software and brings extensive experience developing scientific and clinical NLP systems. He is also a long-time contributor to Apache cTAKES and its developer community.</p>
+            </p>
+
+          </div>
+        </header>
+        <div class="team-single-body">
+          <div class="content"><p>Sean Finan is DeepPhe’s principal engineer and a senior software developer in the Natural Language Processing Laboratory at Boston Children’s Hospital.</p>
+
+<p>He designs and implements DeepPhe’s core software and contributes to Apache cTAKES.</p>
 </div>
 
-        <p><a href="https://research.childrenshospital.org/researchers/sean-finan">Official profile</a></p>
+          <div class="team-single-actions">
+            <a class="team-single-profile-link" href="https://research.childrenshospital.org/researchers/sean-finan" aria-label="View official profile for Sean Finan">
+              <span>Official profile</span>
+              <span aria-hidden="true">&rarr;</span>
+            </a>
+          </div>
 
-      </div>
+        </div>
+      </article>
     </div>
   </div>
 </div>
@@ -168,10 +181,6 @@
 
             <li class="">
               <a href="/beta-github-io-site/">Home</a>
-            </li>
-
-            <li class="">
-              <a href="/beta-github-io-site/team/">Team</a>
             </li>
 
           </ul>

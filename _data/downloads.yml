@@ -1,112 +1,131 @@
 products:
   - id: xn
     name: "DeepPhe Translational"
-    blurb: "Release for translational studies and research cohorts."
+    audience: "Research and translational studies"
+    choice_blurb: "Install DeepPhe for research cohorts and translational workflows."
+    blurb: "For translational studies, research cohorts, and visual review of extracted cancer phenotypes."
+    note: "The installers include DeepPhe Translational and DeepPhe Visualizer."
+    more_label: "Tools, examples, and source code"
+    more_blurb: "Open this section when you need individual components, sample data, or source archives."
     info_url: "https://github.com/DeepPhe/DeepPhe-Release/wiki"
     groups:
       - label: "Installers"
+        kicker: "Recommended"
+        description: "Choose your operating system to install the complete research software."
+        featured: true
         version: "7.1"
         built: "2026-07-13"
         assets:
           - platform: windows
-            title: "Windows DeepPhe-XN & DeepPhe Visualizer 2 Installer"
+            title: "Windows installer"
             file: "DeepPhe_windows-7.1.exe"
             url: "https://github.com/DeepPhe/DeepPhe-Dist/releases/download/deepphe-installer-7.1/DeepPhe_windows-7.1.exe"
           - platform: macos
-            title: "macOS DeepPhe-XN & DeepPhe Visualizer 2 Installer"
+            title: "macOS installer"
             file: "DeepPhe-7.1.dmg"
             url: "https://github.com/DeepPhe/DeepPhe-Dist/releases/download/deepphe-installer-7.1/DeepPhe-7.1.dmg"
           - platform: linux
-            title: "Linux DeepPhe-XN & DeepPhe Visualizer 2 Installer"
+            title: "Linux installer"
             file: "DeepPhe_linux-x64-7.1.sh"
             url: "https://github.com/DeepPhe/DeepPhe-Dist/releases/download/deepphe-installer-7.1/DeepPhe_linux-x64-7.1.sh"
       - label: "Examples"
+        description: "Sample files for trying the DeepPhe Translational workflow."
         version: "7.1"
         built: "2026-07-08"
         assets:
           - platform: zip
-            title: "DeepPhe-XN Examples"
+            title: "Examples package"
             file: "DeepPhe-examples.zip"
             url: "https://github.com/DeepPhe/DeepPhe-Dist/releases/download/dphe-examples-7.1/DeepPhe-examples.zip"
-      - label: "Source Code"
+      - label: "DeepPhe Translational source code"
+        description: "Source archives for the DeepPhe Translational release."
         version: "xn0.7.00"
         built: "2025-08-19"
         assets:
           - platform: zip
-            title: "DeepPhe-XN Source Code (zip)"
+            title: "ZIP archive"
             file: "xn0.7.00.zip"
             url: "https://github.com/DeepPhe/DeepPhe-Release/archive/refs/tags/xn0.7.00.zip"
           - platform: targz
-            title: "DeepPhe-XN Source Code (tar.gz)"
+            title: "tar.gz archive"
             file: "xn0.7.00.tar.gz"
             url: "https://github.com/DeepPhe/DeepPhe-Release/archive/refs/tags/xn0.7.00.tar.gz"
       - label: "DeepPhe DB Pipeline"
+        description: "Load DeepPhe results into the database used by the Data API and Visualizer."
         version: "7.1"
         built: "2026-07-08"
         assets:
           - platform: windows
-            title: "Windows DeepPhe DB Pipeline"
+            title: "Windows"
             file: "DeepPheVizDbCreator-windows-x86_64.exe"
             url: "https://github.com/DeepPhe/DeepPhe-Dist/releases/download/dphe-db-pipeline-7.1/DeepPheVizDbCreator-windows-x86_64.exe"
           - platform: macos-intel
-            title: "macOS Intel DeepPhe DB Pipeline"
+            title: "macOS (Intel)"
             file: "DeepPheVizDbCreator-macos-x86_64"
             url: "https://github.com/DeepPhe/DeepPhe-Dist/releases/download/dphe-db-pipeline-7.1/DeepPheVizDbCreator-macos-x86_64"
           - platform: macos-arm
-            title: "macOS ARM DeepPhe DB Pipeline"
+            title: "macOS (Apple silicon)"
             file: "DeepPheVizDbCreator-macos-arm64"
             url: "https://github.com/DeepPhe/DeepPhe-Dist/releases/download/dphe-db-pipeline-7.1/DeepPheVizDbCreator-macos-arm64"
           - platform: linux
-            title: "Linux DeepPhe DB Pipeline"
+            title: "Linux"
             file: "DeepPheVizDbCreator-linux-x86_64"
             url: "https://github.com/DeepPhe/DeepPhe-Dist/releases/download/dphe-db-pipeline-7.1/DeepPheVizDbCreator-linux-x86_64"
       - label: "DeepPhe Data API"
+        description: "Serve database content to the DeepPhe Visualizer and other applications."
         version: "7.1"
         built: "2026-07-08"
         assets:
           - platform: windows
-            title: "Windows DeepPhe Data API"
+            title: "Windows"
             file: "dphe-data-api-win-x64.exe"
             url: "https://github.com/DeepPhe/DeepPhe-Dist/releases/download/dphe-data-api-7.1/dphe-data-api-win-x64.exe"
           - platform: macos-intel
-            title: "macOS Intel DeepPhe Data API"
+            title: "macOS (Intel)"
             file: "dphe-data-api-macos-x64"
             url: "https://github.com/DeepPhe/DeepPhe-Dist/releases/download/dphe-data-api-7.1/dphe-data-api-macos-x64"
           - platform: macos-arm
-            title: "macOS ARM DeepPhe Data API"
+            title: "macOS (Apple silicon)"
             file: "dphe-data-api-macos-arm64"
             url: "https://github.com/DeepPhe/DeepPhe-Dist/releases/download/dphe-data-api-7.1/dphe-data-api-macos-arm64"
           - platform: linux
-            title: "Linux DeepPhe Data API"
+            title: "Linux"
             file: "dphe-data-api-linux-x64"
             url: "https://github.com/DeepPhe/DeepPhe-Dist/releases/download/dphe-data-api-7.1/dphe-data-api-linux-x64"
-      - label: "DeepPhe Visualizer 2 Source Code"
+      - label: "DeepPhe Visualizer source code"
+        description: "Source archives for the Visualizer 2 release."
         version: "7.1"
         built: "2026-07-14"
         assets:
           - platform: zip
-            title: "DeepPhe Visualizer 2 Source Code (zip)"
+            title: "ZIP archive"
             file: "v0.7.1.zip"
             url: "https://github.com/DeepPhe/DeepPhe-Visualizer-v2/archive/refs/tags/v0.7.1.zip"
           - platform: targz
-            title: "DeepPhe Visualizer 2 Source Code (tar.gz)"
+            title: "tar.gz archive"
             file: "v0.7.1.tar.gz"
             url: "https://github.com/DeepPhe/DeepPhe-Visualizer-v2/archive/refs/tags/v0.7.1.tar.gz"
 
   - id: cr
-    name: "DeepPhe-CR Final"
-    blurb: "Final release for cancer registry applications."
+    name: "DeepPhe-CR"
+    audience: "Cancer registry workflows"
+    choice_blurb: "Get the final release for registrar and registry applications."
+    blurb: "For registrar case abstraction, cancer registry workflows, and integration with registry systems."
+    note: "This is the final DeepPhe-CR software release."
     info_url: "https://github.com/DeepPhe/DeepPhe-CR-Release/wiki"
     groups:
-      - label: "Source Code"
+      - label: "DeepPhe-CR Final release"
+        kicker: "Final release"
+        description: "Choose the source archive format you prefer."
+        featured: true
         version: "v0.4.0-cr"
         built: "2023-05-10"
         assets:
           - platform: zip
-            title: "DeepPhe-CR Release (zip)"
+            title: "ZIP archive"
             file: "v0.4.0-cr.zip"
             url: "https://github.com/DeepPhe/DeepPhe-CR-Release/releases/download/v0.4.0-cr/v0.4.0-cr.zip"
           - platform: tarz
-            title: "DeepPhe-CR Release (tar.z)"
+            title: "tar.z archive"
             file: "v0.4.0-cr.tar.z"
             url: "https://github.com/DeepPhe/DeepPhe-CR-Release/releases/download/v0.4.0-cr/v0.4.0-cr.tar.z"

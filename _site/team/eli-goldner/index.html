@@ -32,7 +32,7 @@
 </head>
 <body class='page '>
   <a class="skip-link" href="#main-content">Skip to main content</a>
-  <nav id="main-menu-mobile" class="main-menu-mobile" aria-label="Mobile">
+  <nav id="main-menu-mobile" class="main-menu-mobile" aria-label="Mobile" aria-hidden="true" inert>
 
   <ul>
 
@@ -128,28 +128,45 @@
   </div>
 </header>
 
-    <main id="main-content">
-      <div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+    <main id="main-content" tabindex="-1">
+      <div class="container standard-page-layout">
   <div class="row justify-content-start">
-    <div class="col-12 col-md-8">
-      <div class="team team-single">
-        <h1 class="title">Eli Goldner</h1>
-        <p class="team-single-role">NLP Data Scientist</p>
+    <div class="col-12 col-xl-10">
+      <article class="team team-single">
+        <header class="team-single-header">
 
-        <p class="team-single-institution">
+          <div class="team-single-image">
+            <img alt="" src="/beta-github-io-site/images/team/eli-goldner.jpg" />
+          </div>
 
-          <a href="https://www.childrenshospital.org">Boston Children's Hospital</a>
+          <div class="team-single-meta">
+            <h1 class="title">Eli Goldner</h1>
+            <p class="team-single-role">NLP Data Scientist</p>
 
-        </p>
 
-        <div class="content"><p>Eli Goldner is an NLP data scientist at Boston Children’s Hospital and a contributor to DeepPhe research.</p>
+            <p class="team-single-institution">
+
+              <a href="https://www.childrenshospital.org">Boston Children's Hospital</a>
+
+            </p>
+
+          </div>
+        </header>
+        <div class="team-single-body">
+          <div class="content"><p>Eli Goldner is an NLP data scientist at Boston Children’s Hospital and a contributor to DeepPhe research.</p>
 
 <p>His DeepPhe-related work includes the development and evaluation of natural language processing methods for extracting radiotherapy events and systemic anticancer therapy timelines from clinical text.</p>
 </div>
 
-        <p><a href="https://www.brandeis.edu/computer-science/computational-linguistics/masters/prospective-students/alumni-profiles.html">Official profile</a></p>
+          <div class="team-single-actions">
+            <a class="team-single-profile-link" href="https://www.brandeis.edu/graduate-affairs/news-events/stories/2025/cl-alums.html" aria-label="View official profile for Eli Goldner">
+              <span>Official profile</span>
+              <span aria-hidden="true">&rarr;</span>
+            </a>
+          </div>
 
-      </div>
+        </div>
+      </article>
     </div>
   </div>
 </div>
@@ -168,10 +185,6 @@
 
             <li class="">
               <a href="/beta-github-io-site/">Home</a>
-            </li>
-
-            <li class="">
-              <a href="/beta-github-io-site/team/">Team</a>
             </li>
 
           </ul>

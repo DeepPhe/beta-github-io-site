@@ -36,7 +36,7 @@
 </head>
 <body class='page '>
   <a class="skip-link" href="#main-content">Skip to main content</a>
-  <nav id="main-menu-mobile" class="main-menu-mobile" aria-label="Mobile">
+  <nav id="main-menu-mobile" class="main-menu-mobile" aria-label="Mobile" aria-hidden="true" inert>
 
   <ul>
 
@@ -132,14 +132,14 @@
   </div>
 </header>
 
-    <main id="main-content">
+    <main id="main-content" tabindex="-1">
       <div class="container non-main-page">
-    <div class="mx-auto section section-with-bottom-air papers-section">
+    <div class="mx-auto section papers-section">
 
 <div class="publications-page" data-publications-page="">
   <div class="publications-view-toggle" role="tablist" aria-label="Publication views">
-    <button class="publications-view-button" id="publications-all-tab" type="button" role="tab" data-publications-view-button="all" aria-controls="publications-all-panel" aria-selected="true" aria-pressed="true">All</button>
-    <button class="publications-view-button" id="publications-search-tab" type="button" role="tab" data-publications-view-button="search" aria-controls="publications-search-panel" aria-selected="false" aria-pressed="false">Search</button>
+    <button class="publications-view-button" id="publications-all-tab" type="button" role="tab" data-publications-view-button="all" aria-controls="publications-all-panel" aria-selected="true" tabindex="0">All</button>
+    <button class="publications-view-button" id="publications-search-tab" type="button" role="tab" data-publications-view-button="search" aria-controls="publications-search-panel" aria-selected="false" tabindex="-1">Search</button>
   </div>
 
   <section class="publications-panel publications-all-panel" id="publications-all-panel" role="tabpanel" data-publications-view="all" aria-labelledby="publications-all-tab">
@@ -244,7 +244,7 @@
     <p>Search DeepPhe journal articles, preprints, conference papers, talks, and panels.</p>
   </header>
 
-  <div class="publications-controls" aria-label="Publication search and filters">
+  <div class="publications-controls" role="search" aria-label="Publication search and filters">
     <div class="publications-search">
       <label for="publications-search">Search publications</label>
       <div class="publications-search-field">
@@ -252,7 +252,7 @@
         <input id="publications-search" type="search" placeholder="Search title, author, venue..." data-publications-search="" />
       </div>
     </div>
-    <div class="publications-filters" aria-label="Filter by publication category">
+    <div class="publications-filters" role="group" aria-label="Filter by publication category">
       <button class="publications-filter" type="button" data-publications-filter="journal" aria-pressed="false">Journal</button>
       <button class="publications-filter" type="button" data-publications-filter="presentation" aria-pressed="false">Conference / Talk / Panel</button>
     </div>
@@ -295,15 +295,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -329,7 +329,7 @@
 
 
 
-    <div class="publication-year-group" data-publication-year-group="" aria-labelledby="publications-2025">
+    <div class="publication-year-group" data-publication-year-group="">
       <h3 class="publication-year" id="publications-2025">2025</h3>
 
 
@@ -360,15 +360,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -411,15 +411,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -458,15 +458,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -503,15 +503,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -523,7 +523,7 @@
     </div>
 
 
-    <div class="publication-year-group" data-publication-year-group="" aria-labelledby="publications-2024">
+    <div class="publication-year-group" data-publication-year-group="">
       <h3 class="publication-year" id="publications-2024">2024</h3>
 
 
@@ -554,15 +554,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -605,15 +605,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -652,15 +652,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -672,7 +672,7 @@
     </div>
 
 
-    <div class="publication-year-group" data-publication-year-group="" aria-labelledby="publications-2023">
+    <div class="publication-year-group" data-publication-year-group="">
       <h3 class="publication-year" id="publications-2023">2023</h3>
 
 
@@ -709,15 +709,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -760,15 +760,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -816,15 +816,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -836,7 +836,7 @@
     </div>
 
 
-    <div class="publication-year-group" data-publication-year-group="" aria-labelledby="publications-2021">
+    <div class="publication-year-group" data-publication-year-group="">
       <h3 class="publication-year" id="publications-2021">2021</h3>
 
 
@@ -871,15 +871,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -920,15 +920,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -940,7 +940,7 @@
     </div>
 
 
-    <div class="publication-year-group" data-publication-year-group="" aria-labelledby="publications-2020">
+    <div class="publication-year-group" data-publication-year-group="">
       <h3 class="publication-year" id="publications-2020">2020</h3>
 
 
@@ -977,15 +977,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -997,7 +997,7 @@
     </div>
 
 
-    <div class="publication-year-group" data-publication-year-group="" aria-labelledby="publications-2019">
+    <div class="publication-year-group" data-publication-year-group="">
       <h3 class="publication-year" id="publications-2019">2019</h3>
 
 
@@ -1034,15 +1034,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -1083,15 +1083,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -1134,15 +1134,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -1154,7 +1154,7 @@
     </div>
 
 
-    <div class="publication-year-group" data-publication-year-group="" aria-labelledby="publications-2018">
+    <div class="publication-year-group" data-publication-year-group="">
       <h3 class="publication-year" id="publications-2018">2018</h3>
 
 
@@ -1191,15 +1191,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -1211,7 +1211,7 @@
     </div>
 
 
-    <div class="publication-year-group" data-publication-year-group="" aria-labelledby="publications-2017">
+    <div class="publication-year-group" data-publication-year-group="">
       <h3 class="publication-year" id="publications-2017">2017</h3>
 
 
@@ -1248,15 +1248,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -1295,15 +1295,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -1355,15 +1355,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -1375,7 +1375,7 @@
     </div>
 
 
-    <div class="publication-year-group" data-publication-year-group="" aria-labelledby="publications-2016">
+    <div class="publication-year-group" data-publication-year-group="">
       <h3 class="publication-year" id="publications-2016">2016</h3>
 
 
@@ -1412,15 +1412,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -1432,7 +1432,7 @@
     </div>
 
 
-    <div class="publication-year-group" data-publication-year-group="" aria-labelledby="publications-2015">
+    <div class="publication-year-group" data-publication-year-group="">
       <h3 class="publication-year" id="publications-2015">2015</h3>
 
 
@@ -1467,15 +1467,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -1493,7 +1493,7 @@
 
 
 
-    <div class="publication-year-group" data-publication-year-group="" aria-labelledby="presentations-2025">
+    <div class="publication-year-group" data-publication-year-group="">
       <h3 class="publication-year" id="presentations-2025">2025</h3>
 
 
@@ -1524,15 +1524,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -1569,15 +1569,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -1614,15 +1614,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -1659,15 +1659,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -1679,7 +1679,7 @@
     </div>
 
 
-    <div class="publication-year-group" data-publication-year-group="" aria-labelledby="presentations-2024">
+    <div class="publication-year-group" data-publication-year-group="">
       <h3 class="publication-year" id="presentations-2024">2024</h3>
 
 
@@ -1712,15 +1712,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -1759,15 +1759,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -1806,15 +1806,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -1826,7 +1826,7 @@
     </div>
 
 
-    <div class="publication-year-group" data-publication-year-group="" aria-labelledby="presentations-2023">
+    <div class="publication-year-group" data-publication-year-group="">
       <h3 class="publication-year" id="presentations-2023">2023</h3>
 
 
@@ -1857,15 +1857,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -1902,15 +1902,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -1956,15 +1956,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -2007,15 +2007,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -2056,15 +2056,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -2110,15 +2110,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -2130,7 +2130,7 @@
     </div>
 
 
-    <div class="publication-year-group" data-publication-year-group="" aria-labelledby="presentations-2022">
+    <div class="publication-year-group" data-publication-year-group="">
       <h3 class="publication-year" id="presentations-2022">2022</h3>
 
 
@@ -2163,15 +2163,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -2210,15 +2210,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -2230,7 +2230,7 @@
     </div>
 
 
-    <div class="publication-year-group" data-publication-year-group="" aria-labelledby="presentations-2021">
+    <div class="publication-year-group" data-publication-year-group="">
       <h3 class="publication-year" id="presentations-2021">2021</h3>
 
 
@@ -2263,15 +2263,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -2315,15 +2315,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -2362,15 +2362,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -2382,7 +2382,7 @@
     </div>
 
 
-    <div class="publication-year-group" data-publication-year-group="" aria-labelledby="presentations-2020">
+    <div class="publication-year-group" data-publication-year-group="">
       <h3 class="publication-year" id="presentations-2020">2020</h3>
 
 
@@ -2415,15 +2415,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -2462,15 +2462,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -2509,15 +2509,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -2556,15 +2556,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -2605,15 +2605,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -2652,15 +2652,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -2672,7 +2672,7 @@
     </div>
 
 
-    <div class="publication-year-group" data-publication-year-group="" aria-labelledby="presentations-2019">
+    <div class="publication-year-group" data-publication-year-group="">
       <h3 class="publication-year" id="presentations-2019">2019</h3>
 
 
@@ -2705,15 +2705,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -2752,15 +2752,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -2799,15 +2799,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -2819,7 +2819,7 @@
     </div>
 
 
-    <div class="publication-year-group" data-publication-year-group="" aria-labelledby="presentations-2018">
+    <div class="publication-year-group" data-publication-year-group="">
       <h3 class="publication-year" id="presentations-2018">2018</h3>
 
 
@@ -2852,15 +2852,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -2899,15 +2899,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -2946,15 +2946,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -2993,15 +2993,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -3040,15 +3040,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -3087,15 +3087,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -3141,15 +3141,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -3161,7 +3161,7 @@
     </div>
 
 
-    <div class="publication-year-group" data-publication-year-group="" aria-labelledby="presentations-2017">
+    <div class="publication-year-group" data-publication-year-group="">
       <h3 class="publication-year" id="presentations-2017">2017</h3>
 
 
@@ -3194,15 +3194,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -3241,15 +3241,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -3288,15 +3288,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -3335,15 +3335,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -3382,15 +3382,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -3429,15 +3429,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -3476,15 +3476,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -3496,7 +3496,7 @@
     </div>
 
 
-    <div class="publication-year-group" data-publication-year-group="" aria-labelledby="presentations-2016">
+    <div class="publication-year-group" data-publication-year-group="">
       <h3 class="publication-year" id="presentations-2016">2016</h3>
 
 
@@ -3529,15 +3529,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -3576,15 +3576,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -3623,15 +3623,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -3670,15 +3670,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -3717,15 +3717,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -3764,15 +3764,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -3811,15 +3811,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -3858,15 +3858,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -3905,15 +3905,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -3925,7 +3925,7 @@
     </div>
 
 
-    <div class="publication-year-group" data-publication-year-group="" aria-labelledby="presentations-2015">
+    <div class="publication-year-group" data-publication-year-group="">
       <h3 class="publication-year" id="presentations-2015">2015</h3>
 
 
@@ -3958,15 +3958,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -4005,15 +4005,15 @@
 
       <span class="publication-cite" data-publication-cite="">
         <button class="publication-cite-toggle" type="button" data-cite-toggle="" aria-expanded="false">Cite</button>
-        <span class="publication-cite-menu" role="menu" data-cite-menu="" hidden="">
-          <button type="button" role="menuitem" data-cite-format="ris">RIS</button>
-          <button type="button" role="menuitem" data-cite-format="csl-json">CSL-JSON</button>
-          <button type="button" role="menuitem" data-cite-format="biblatex">BibLaTeX</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-enw">EndNote ENW</button>
-          <button type="button" role="menuitem" data-cite-format="endnote-xml">EndNote XML</button>
-          <button type="button" role="menuitem" data-cite-format="mods">MODS XML</button>
-          <button type="button" role="menuitem" data-cite-format="marcxml">MARCXML</button>
-          <button type="button" role="menuitem" data-cite-format="dublin-core">Dublin Core XML</button>
+        <span class="publication-cite-menu" role="group" aria-label="Citation export formats" data-cite-menu="" hidden="">
+          <button type="button" data-cite-format="ris">RIS</button>
+          <button type="button" data-cite-format="csl-json">CSL-JSON</button>
+          <button type="button" data-cite-format="biblatex">BibLaTeX</button>
+          <button type="button" data-cite-format="endnote-enw">EndNote ENW</button>
+          <button type="button" data-cite-format="endnote-xml">EndNote XML</button>
+          <button type="button" data-cite-format="mods">MODS XML</button>
+          <button type="button" data-cite-format="marcxml">MARCXML</button>
+          <button type="button" data-cite-format="dublin-core">Dublin Core XML</button>
         </span>
       </span>
     </span>
@@ -4047,10 +4047,6 @@
 
             <li class="">
               <a href="/beta-github-io-site/">Home</a>
-            </li>
-
-            <li class="">
-              <a href="/beta-github-io-site/team/">Team</a>
             </li>
 
           </ul>

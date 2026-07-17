@@ -2,7 +2,7 @@
   padding: 10px 0 10px 10px;
   z-index: 30;
   cursor: pointer;
-  @include media-breakpoint-up(md) {
+  @include media-breakpoint-up(lg) {
     display: none;
   }
   &:focus-visible {

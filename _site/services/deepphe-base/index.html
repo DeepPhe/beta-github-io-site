@@ -32,7 +32,7 @@
 </head>
 <body class='page '>
   <a class="skip-link" href="#main-content">Skip to main content</a>
-  <nav id="main-menu-mobile" class="main-menu-mobile" aria-label="Mobile">
+  <nav id="main-menu-mobile" class="main-menu-mobile" aria-label="Mobile" aria-hidden="true" inert>
 
   <ul>
 
@@ -128,26 +128,27 @@
   </div>
 </header>
 
-    <main id="main-content">
-      <div class="container pb-6 pt-6 pt-md-10 pb-md-10">
+    <main id="main-content" tabindex="-1">
+      <div class="container standard-page-layout">
   <div class="row justify-content-start">
     <div class="col-12 col-md-8">
       <div class="service service-single">
         <h1 class="title">DeepPhe (base)</h1>
         <div class="content"><p>DeepPhe Base is the underlying platform that DeepPhe releases are built on; it is not a separate release you install on its own. It processes corpora of patient notes, extracting mentions and attributes of key cancer concepts from individual notes and integrating the information within and across documents to build a high-level summary of a patient’s case. It also contains machine-learning-trained classifiers capable of labeling individual notes according to the phase of treatment (pre-diagnostic, diagnostic, treatment, etc.).</p>
 
-<p>To choose a release to install, see the <a href="https://deepphe.github.io/software/">Software page</a>: DeepPhe Translational for translational studies, or DeepPhe-CR Final for cancer registry applications.</p>
+<p>To choose a release to install, see the <a href="https://deepphe.github.io/software/">Software page</a>: DeepPhe Translational for translational studies, or DeepPhe-CR for cancer registry applications.</p>
 
 <p>Supported by the <a href="https://www.cancer.gov">National Cancer Institute’s</a>
 <a href="https://itcr.cancer.gov">Information Technology for Cancer Research (ITCR) initiative</a>
-(Grant #U24CA248010) and the <a href="https://www.cancer.gov">National Cancer Institute’s</a>
+(Grant #<a href="https://reporter.nih.gov/project-details/11231451">U24CA248010</a>) and the <a href="https://www.cancer.gov">National Cancer Institute’s</a>
 <a href="https://seer.cancer.gov">Surveillance, Epidemiology, and End Results (SEER) program</a>
- (Grant #UH3CA243120).</p>
+ (Grant #<a href="https://reporter.nih.gov/project-details/10656293">UH3CA243120</a>).</p>
 </div>
       </div>
     </div>
   </div>
 </div>
+
     </main>
   </div>
   <footer>
@@ -162,10 +163,6 @@
 
             <li class="">
               <a href="/beta-github-io-site/">Home</a>
-            </li>
-
-            <li class="">
-              <a href="/beta-github-io-site/team/">Team</a>
             </li>
 
           </ul>

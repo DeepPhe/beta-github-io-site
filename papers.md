@@ -3,7 +3,6 @@ title: Publications
 permalink: /papers/
 layout: papers
 description: DeepPhe publications, presentations, talks, and panels.
-extra_bottom_air: true
 extra_css:
   - /assets/css/publications.css
 extra_js:
@@ -21,8 +20,8 @@ extra_js:
 
 <div class="publications-page" data-publications-page>
   <div class="publications-view-toggle" role="tablist" aria-label="Publication views">
-    <button class="publications-view-button" id="publications-all-tab" type="button" role="tab" data-publications-view-button="all" aria-controls="publications-all-panel" aria-selected="true" aria-pressed="true">All</button>
-    <button class="publications-view-button" id="publications-search-tab" type="button" role="tab" data-publications-view-button="search" aria-controls="publications-search-panel" aria-selected="false" aria-pressed="false">Search</button>
+    <button class="publications-view-button" id="publications-all-tab" type="button" role="tab" data-publications-view-button="all" aria-controls="publications-all-panel" aria-selected="true" tabindex="0">All</button>
+    <button class="publications-view-button" id="publications-search-tab" type="button" role="tab" data-publications-view-button="search" aria-controls="publications-search-panel" aria-selected="false" tabindex="-1">Search</button>
   </div>
 
   <section class="publications-panel publications-all-panel" id="publications-all-panel" role="tabpanel" data-publications-view="all" aria-labelledby="publications-all-tab" markdown="1">
@@ -125,7 +124,7 @@ extra_js:
     <p>Search DeepPhe journal articles, preprints, conference papers, talks, and panels.</p>
   </header>
 
-  <div class="publications-controls" aria-label="Publication search and filters">
+  <div class="publications-controls" role="search" aria-label="Publication search and filters">
     <div class="publications-search">
       <label for="publications-search">Search publications</label>
       <div class="publications-search-field">
@@ -133,7 +132,7 @@ extra_js:
         <input id="publications-search" type="search" placeholder="Search title, author, venue..." data-publications-search>
       </div>
     </div>
-    <div class="publications-filters" aria-label="Filter by publication category">
+    <div class="publications-filters" role="group" aria-label="Filter by publication category">
       <button class="publications-filter" type="button" data-publications-filter="journal" aria-pressed="false">Journal</button>
       <button class="publications-filter" type="button" data-publications-filter="presentation" aria-pressed="false">Conference / Talk / Panel</button>
     </div>
@@ -156,7 +155,7 @@ extra_js:
 {% assign publication_groups = journal_entries | group_by: "year" | sort: "name" | reverse %}
 {% for group in publication_groups %}
 {% assign entries = group.items | sort: "title" %}
-    <div class="publication-year-group" data-publication-year-group aria-labelledby="publications-{{ group.name }}">
+    <div class="publication-year-group" data-publication-year-group>
       <h3 class="publication-year" id="publications-{{ group.name }}">{{ group.name }}</h3>
 {% for item in entries %}
 {% include publication-entry.html item=item heading_level=4 %}
@@ -170,7 +169,7 @@ extra_js:
 {% assign presentation_groups = presentation_entries | group_by: "year" | sort: "name" | reverse %}
 {% for group in presentation_groups %}
 {% assign entries = group.items | sort: "title" %}
-    <div class="publication-year-group" data-publication-year-group aria-labelledby="presentations-{{ group.name }}">
+    <div class="publication-year-group" data-publication-year-group>
       <h3 class="publication-year" id="presentations-{{ group.name }}">{{ group.name }}</h3>
 {% for item in entries %}
 {% include publication-entry.html item=item heading_level=4 %}

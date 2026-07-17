@@ -32,7 +32,7 @@
 </head>
 <body class='page '>
   <a class="skip-link" href="#main-content">Skip to main content</a>
-  <nav id="main-menu-mobile" class="main-menu-mobile" aria-label="Mobile">
+  <nav id="main-menu-mobile" class="main-menu-mobile" aria-label="Mobile" aria-hidden="true" inert>
 
   <ul>
 
@@ -128,10 +128,10 @@
   </div>
 </header>
 
-    <main id="main-content">
+    <main id="main-content" tabindex="-1">
       <div class="intro">
   <div class="container">
-    <div class="row justify-content-start section section-with-bottom-air">
+    <div class="row justify-content-start section">
       <div class="col-12  content">
         <h1 id="deepphe-software">DeepPhe Software</h1>
 
@@ -144,10 +144,10 @@ DeepPhe can produce results in many output formats, as well as store information
 
 <ul>
   <li><strong>DeepPhe Translational</strong> - for translational studies and research cohorts.</li>
-  <li><strong>DeepPhe-CR Final</strong> - for cancer registry applications and registrar workflows.</li>
+  <li><strong>DeepPhe-CR</strong> - for cancer registry applications and registrar workflows.</li>
 </ul>
 
-<p>DeepPhe Base is the underlying platform these releases are built on; it is not a separate release you choose. DeepPhe Visualizer 2 is a companion viewer for exploring DeepPhe Translational results.</p>
+<p>DeepPhe Base is the underlying platform these releases are built on; it is not a separate release you choose. DeepPhe Visualizer is a companion viewer for exploring DeepPhe Translational results.</p>
 
 <!--- The details in the old Information Model paper are nowhere near accurate anymore.  I moved the link to the papers page.  spf  -->
 
@@ -158,14 +158,14 @@ DeepPhe can produce results in many output formats, as well as store information
 </div>
 
 <div class="container">
-  <div class="row section section-with-bottom-air">
+  <div class="row section services-catalog">
     <div class="col-12 col-md-12 mb-3">
       <div class="service service-summary">
         <div class="service-content content">
           <h2 class="service-title">
             <a href="/beta-github-io-site/services/deepphe-xn/">DeepPhe Translational</a>
           </h2>
-          <p>DeepPhe Translational is the DeepPhe release for translational studies. It builds upon the base DeepPhe platform to provide extensive information useful for translational cancer research. Results from processing are stored in a SQLite database that can be utilized by DeepPhe Visualizer 2.</p>
+          <p>DeepPhe Translational is the DeepPhe release for translational studies. It builds upon the base DeepPhe platform to provide extensive information useful for translational cancer research. Results from processing are stored in a SQLite database that can be utilized by DeepPhe Visualizer.</p>
 
 <p>There is a <a href="https://github.com/DeepPhe/DeepPhe-Release/wiki">DeepPhe-XN wiki</a> with information on installation and use.</p>
 
@@ -173,7 +173,7 @@ DeepPhe can produce results in many output formats, as well as store information
 
 <p>Supported by the <a href="https://www.cancer.gov">National Cancer Institute’s</a>
 <a href="https://itcr.cancer.gov">Information Technology for Cancer Research (ITCR) initiative</a>
-(Grant #U24CA248010).</p>
+(Grant #<a href="https://reporter.nih.gov/project-details/11231451">U24CA248010</a>).</p>
 
         </div>
       </div>
@@ -182,22 +182,22 @@ DeepPhe can produce results in many output formats, as well as store information
       <div class="service service-summary">
         <div class="service-content content">
           <h2 class="service-title">
-            <a href="/beta-github-io-site/services/deepphe-viz/">DeepPhe Visualizer 2</a>
+            <a href="/beta-github-io-site/services/deepphe-viz/">DeepPhe Visualizer</a>
           </h2>
           <p>DeepPhe results that are stored in a SQLite database such as those created by DeepPhe Translational
 can be utilized with the 
-<a href="https://github.com/DeepPhe/DeepPhe-Visualizer-v2">DeepPhe Visualizer 2</a>,
+<a href="https://github.com/DeepPhe/DeepPhe-Visualizer-v2">DeepPhe Visualizer</a>,
 which provides a web-based interface to data, supporting
 review of both cohorts and individual patient records.</p>
 
 <p>See the <a href="https://deepphe.github.io/DeepPhe-Visualizer-v2/">DeepPhe Visualizer 2 User Guide</a>
 for installation and usage documentation.</p>
 
-<p>Documentation: <a href="https://deepphe.github.io/dphe-data-api/">DeepPhe Data API</a> for the API layer that serves the database read by DeepPhe Visualizer 2.</p>
+<p>Documentation: <a href="https://deepphe.github.io/dphe-data-api/">DeepPhe Data API</a> for the API layer that serves the database read by DeepPhe Visualizer.</p>
 
 <p>Supported by the <a href="https://www.cancer.gov">National Cancer Institute’s</a>
 <a href="https://itcr.cancer.gov">Information Technology for Cancer Research (ITCR) initiative</a> 
-(Grant #U24CA248010).</p>
+(Grant #<a href="https://reporter.nih.gov/project-details/11231451">U24CA248010</a>).</p>
 
         </div>
       </div>
@@ -206,9 +206,9 @@ for installation and usage documentation.</p>
       <div class="service service-summary">
         <div class="service-content content">
           <h2 class="service-title">
-            <a href="/beta-github-io-site/services/deepphe-cr/">DeepPhe-CR Final</a>
+            <a href="/beta-github-io-site/services/deepphe-cr/">DeepPhe-CR</a>
           </h2>
-          <p>DeepPhe-CR Final is the final DeepPhe release for cancer registry applications. It is intended for cancer registry workflows, registrar case abstraction, and integration with registry systems.</p>
+          <p>The DeepPhe-CR Final release is the project’s final software release for cancer registry applications. DeepPhe-CR is intended for cancer registry workflows, registrar case abstraction, and integration with registry systems.</p>
 
 <p>DeepPhe-CR builds upon the base DeepPhe platform to provide REST APIs
 for submissions of documents to the DeepPhe pipeline and return of extracted results,
@@ -226,7 +226,7 @@ DeepPhe-CR has been developed in partnership with the
 
 <p>A collaboration with the <a href="https://www.cancer.gov">National Cancer Institute’s</a>
 <a href="https://seer.cancer.gov">Surveillance, Epidemiology, and End Results (SEER) Program</a> 
- (Grant #UH3CA243120).</p>
+ (Grant #<a href="https://reporter.nih.gov/project-details/10656293">UH3CA243120</a>).</p>
 
         </div>
       </div>
@@ -248,10 +248,6 @@ DeepPhe-CR has been developed in partnership with the
 
             <li class="">
               <a href="/beta-github-io-site/">Home</a>
-            </li>
-
-            <li class="">
-              <a href="/beta-github-io-site/team/">Team</a>
             </li>
 
           </ul>
