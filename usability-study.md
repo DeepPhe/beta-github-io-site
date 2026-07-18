@@ -3,12 +3,12 @@ title: Usability Study
 permalink: /usability-study/
 layout: papers
 description: Help shape the DeepPhe Visualizer by exploring a live demo and sharing feedback in an upcoming usability study.
-app_url: "http://64.181.227.245"
+app_url: "https://64-181-227-245.sslip.io"
 ---
 
 # Usability Study
 
-We're opening up the **DeepPhe Visualizer** for a usability study, and we'd love your help. The idea is straightforward: watch how people who work with cancer data actually use the tool — where it clicks, where it gets in the way — and use what we learn to make it better.
+We're opening up the **DeepPhe Visualizer** for a usability study, and we'd love your help. The task is the one at the heart of cohort research: starting from a question you care about, use the tool to isolate a cohort of patients who match your criteria — then tell us how it went. Where it was smooth, where it got in the way, and what you'd change.
 
 The study is still taking shape. Format, scheduling, consent, and the specific tasks are being finalized, so treat this as an early invitation rather than the final word. If you'd like to take part, you can start exploring the live demo today.
 

@@ -64,6 +64,11 @@
           opacity: 0.8;
         }
       }
+      // Temporary recruitment callout (see _data/menus.yml).
+      &.nav-cta a {
+        color: $amber;
+        font-weight: bold;
+      }
     }
   }
 }

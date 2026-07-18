@@ -1,4 +1,11 @@
 main:
+  # TEMPORARY CALLOUT — remove the class/badge and restore a normal weight
+  # after the usability-study recruitment window closes (~2026-08-17).
+  - name: "Usability Study"
+    url: "/usability-study/"
+    weight: 1
+    class: "nav-cta"
+    badge: "New"
   - name: "Home"
     url: "/"
     weight: 2
@@ -23,9 +30,6 @@ main:
   - name: "Publications"
     url: "/papers/"
     weight: 9
-  - name: "Usability Study"
-    url: "/usability-study/"
-    weight: 10
 
 footer:
   - name: "Home"

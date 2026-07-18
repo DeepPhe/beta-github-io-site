@@ -5529,6 +5529,16 @@ footer { background: #040A16; padding-top: 32px; }
 
 .main-menu > ul > li.active > a:hover { text-decoration: none; transition: all 225ms ease-in 0s; }
 
+.main-menu > ul > li.nav-cta { margin-left: 12px; margin-right: 4px; }
+
+.main-menu > ul > li.nav-cta > a { padding: 6px 14px; font-weight: bold; white-space: nowrap; color: #E2A45C; border: 1px solid #E2A45C; border-radius: 999px; transition: all 150ms ease-in-out; }
+
+.main-menu > ul > li.nav-cta > a:hover { color: #040A16; background: #E2A45C; text-decoration: none; }
+
+.main-menu > ul > li.nav-cta.active > a { color: #040A16; background: #E2A45C; border-color: #E2A45C; }
+
+.nav-badge { display: inline-block; margin-left: 6px; padding: 1px 7px; font-size: 0.7rem; font-weight: bold; text-transform: uppercase; letter-spacing: 0.04em; line-height: 1.4; color: #040A16; background: #E2A45C; border-radius: 999px; vertical-align: middle; }
+
 .main-menu-mobile { position: fixed; background: #0C1826; top: 0; left: 0; width: 100%; height: 100vh; opacity: 0; visibility: hidden; transition: opacity 0.35s, visibility 0s linear 0.35s, height 0.35s; overflow: hidden; display: flex; justify-content: center; align-items: center; flex-direction: column; }
 
 .main-menu-mobile.open { opacity: 0.9; visibility: visible; height: 100%; z-index: 20; transition: opacity 0.35s, visibility 0s linear 0s, height 0.35s; }
@@ -5552,6 +5562,8 @@ footer { background: #040A16; padding-top: 32px; }
 .main-menu-mobile ul li a { display: block; position: relative; color: #F4F6F8; text-decoration: none; overflow: hidden; }
 
 .main-menu-mobile ul li a:hover { opacity: 0.8; }
+
+.main-menu-mobile ul li.nav-cta a { color: #E2A45C; font-weight: bold; }
 
 @keyframes fadeInRight { 0% { opacity: 0;
     left: 20%; }
