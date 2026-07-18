@@ -23,6 +23,9 @@ main:
   - name: "Publications"
     url: "/papers/"
     weight: 9
+  - name: "Usability Study"
+    url: "/usability-study/"
+    weight: 10
 
 footer:
   - name: "Home"
