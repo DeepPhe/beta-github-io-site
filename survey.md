@@ -1,10 +1,18 @@
 ---
-title: User Survey
-layout: contact
-bodyClass: page-contact
+title: Visualizer feedback form
+permalink: /survey/
+layout: papers
+bodyClass: page-survey
+hide_page_title: true
+description: Share feedback about the DeepPhe Visualizer demo.
 ---
 
 
-# User survey
+<div class="survey-page">
+  <div class="survey-intro">
+    <p>Thank you for trying the DeepPhe Visualizer Demo. Your feedback helps the team improve navigation, cohort-building workflows, and documentation.</p>
+    <p>Participation is optional. Please do not include protected health information or other sensitive personal information in your responses.</p>
+  </div>
 
-<iframe title="DeepPhe user survey" src="https://docs.google.com/forms/d/e/1FAIpQLSd1tts0vntcuMQCZwJ8HxubbEVvmA9yoMu50adOyFNFM5HIDg/viewform?embedded=true" style="width:100%; max-width:900px; min-height:1600px; border:0;" marginheight="0" marginwidth="0">Loading…</iframe>
+  <iframe class="survey-embed" title="DeepPhe Visualizer feedback form" src="https://docs.google.com/forms/d/e/1FAIpQLSd1tts0vntcuMQCZwJ8HxubbEVvmA9yoMu50adOyFNFM5HIDg/viewform?embedded=true" marginheight="0" marginwidth="0">Loading...</iframe>
+</div>

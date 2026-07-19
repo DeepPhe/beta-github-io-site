@@ -119,5 +119,5 @@ bundle exec jekyll serve --host 127.0.0.1 --port 4000 --disable-disk-cache
 The local publications page is usually available at:
 
 ```text
-http://127.0.0.1:4000/beta-github-io-site/papers/
+http://127.0.0.1:4000/<configured-baseurl>/papers/
 ```

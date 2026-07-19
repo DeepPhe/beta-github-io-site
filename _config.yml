@@ -1,5 +1,5 @@
 url: "https://deepphe.github.io"
-baseurl: /beta-github-io-site
+baseurl: "/beta-github-io-site"
 permalink: pretty
 title: 'DeepPhe'
 
@@ -12,7 +12,7 @@ logo:
   mobile: "images/logo/DeepPhe-Name-Only.svg"
   desktop: "images/logo/DeepPhe-Name-Only.svg"
   desktop_height: "36px"
-  logo_url: "/beta-github-io-site/"
+  logo_url: "/"
 
 footer:
   copyright_start_year: 2016

@@ -24,4 +24,4 @@ The demo uses a **synthetic dataset of 500 patients**. It does not contain real 
 
 ## Give us feedback
 
-After you explore the demo, please complete the [DeepPhe Visualizer user survey]({{ '/survey/' | relative_url }}). We welcome feedback about what worked well, what was unclear or difficult, and what you would change.
+After you explore the demo, please complete the [DeepPhe Visualizer feedback form]({{ '/survey/' | relative_url }}). We welcome feedback about what worked well, what was unclear or difficult, and what you would change.

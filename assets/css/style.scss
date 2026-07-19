@@ -1222,6 +1222,37 @@ li {
   height:2000px;
 }
 
+.survey-page {
+  color: var(--text);
+}
+
+.survey-intro {
+  display: grid;
+  gap: 12px;
+  max-width: 900px;
+  margin: 0 auto 24px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid var(--border);
+}
+
+.survey-intro p {
+  margin: 0;
+  color: var(--text-muted);
+  font-size: 1.05rem;
+  line-height: 1.6;
+}
+
+.survey-embed {
+  display: block;
+  width: 100%;
+  max-width: 900px;
+  min-height: 1600px;
+  margin: 0 auto;
+  background: var(--surface-2);
+  border: 1px solid var(--border);
+  border-radius: 8px;
+}
+
 .content iframe {
   display: block;
   margin-left: auto;
