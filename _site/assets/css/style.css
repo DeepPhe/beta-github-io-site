@@ -5878,7 +5878,7 @@ li { color: #9BA6B4; padding-bottom: 3px; }
 
 .survey-intro p { margin: 0; color: var(--text-muted); font-size: 1.05rem; line-height: 1.6; }
 
-.survey-embed { display: block; width: 100%; max-width: 900px; min-height: 1600px; margin: 0 auto; background: var(--surface-2); border: 1px solid var(--border); border-radius: 8px; }
+.survey-embed { display: block; width: 100%; max-width: 900px; height: 2600px; margin: 0 auto; background: var(--surface-2); border: 1px solid var(--border); border-radius: 8px; }
 
 .content iframe { display: block; margin-left: auto; margin-right: auto; }
 
@@ -5888,7 +5888,7 @@ body { background-color: #040A16; color: #F4F6F8; font-size: 16px; line-height: 
 
 body img { passing: 20px; }
 
-@media (max-width: 600px) { :root { --page-top-space: 28px; --page-bottom-space: 24px; } .section { padding-left: 16px; padding-right: 16px; } #main-content .row.section { padding-right: 16px; padding-left: 16px; } .papers-section { padding-left: 16px; padding-right: 16px; } .documentation-page { padding-right: 16px !important; padding-left: 16px !important; } }
+@media (max-width: 600px) { :root { --page-top-space: 28px; --page-bottom-space: 24px; } .section { padding-left: 16px; padding-right: 16px; } #main-content .row.section { padding-right: 16px; padding-left: 16px; } .papers-section { padding-left: 16px; padding-right: 16px; } .documentation-page { padding-right: 16px !important; padding-left: 16px !important; } .survey-embed { height: 3650px; } }
 
 @media (max-width: 720px) { .documentation-page { gap: 38px; } .documentation-grid { grid-template-columns: minmax(0, 1fr); } .documentation-card-featured { grid-column: auto; } }
 

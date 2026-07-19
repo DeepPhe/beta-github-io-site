@@ -1246,7 +1246,7 @@ li {
   display: block;
   width: 100%;
   max-width: 900px;
-  min-height: 1600px;
+  height: 2600px;
   margin: 0 auto;
   background: var(--surface-2);
   border: 1px solid var(--border);
@@ -1296,6 +1296,9 @@ body {
   .documentation-page {
     padding-right: 16px !important;
     padding-left: 16px !important;
+  }
+  .survey-embed {
+    height: 3650px;
   }
 }
 
