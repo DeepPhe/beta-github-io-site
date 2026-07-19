@@ -237,6 +237,11 @@ $lightlink: $link;
   padding-right: 50px;
 }
 
+.papers-section > ul:not(:last-child),
+.papers-section > ol:not(:last-child) {
+  margin-bottom: 20px;
+}
+
 .documentation-page {
   display: grid;
   gap: 48px;

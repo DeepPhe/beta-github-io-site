@@ -4469,6 +4469,8 @@ readers do not read off random characters that represent icons */
 
 .papers-section { padding-left: 50px; padding-right: 50px; }
 
+.papers-section > ul:not(:last-child), .papers-section > ol:not(:last-child) { margin-bottom: 20px; }
+
 .documentation-page { display: grid; gap: 48px; max-width: 1200px; padding-right: 32px !important; padding-left: 32px !important; }
 
 .documentation-header { max-width: 880px; padding: 8px 0 32px; border-bottom: 1px solid var(--border); }

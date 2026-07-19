@@ -1,8 +1,6 @@
 main:
-  # TEMPORARY CALLOUT — remove the class/badge and restore a normal weight
-  # after the usability-study recruitment window closes (~2026-08-17).
-  - name: "Usability Study"
-    url: "/usability-study/"
+  - name: "Visualizer Demo"
+    url: "/visualizer-demo/"
     weight: 1
     class: "nav-cta"
     badge: "New"
