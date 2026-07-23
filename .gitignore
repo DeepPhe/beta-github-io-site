@@ -1,0 +1,36 @@
+#       Standards for a Jekyll project.
+# See https://github.com/github/gitignore/blob/main/Jekyll.gitignore
+
+# Build output.  If an online representation is required put it elsewhere.
+# e.g. repo prod-github-io-site, built by github action.
+_site/
+
+# Caches.  These are for local building.
+.sass-cache/
+.jekyll-cache/
+.jekyll-metadata
+
+# Bundler.
+.bundle/
+vendor/
+
+#     The following should be in every .gitignore file, no matter the project.
+
+# IntelliJ IDEA user-specific files.
+.idea/
+*.iml
+*.iws
+*.ipr
+
+# Eclipse IDE files.
+.classpath
+.project
+.settings/
+
+# Generic directories.
+out/
+bin/
+
+# Operating system files.
+.DS_Store
+Thumbs.db
