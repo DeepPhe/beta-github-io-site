@@ -14,4 +14,5 @@ A Natural Language Processing System for Extracting Cancer Phenotypes from Clini
 
 DeepPhe combines natural language processing, summarization, data models, and visual analytics to help researchers examine complex cancer cases and cohorts.
 
-Choose DeepPhe Translational for translational studies and research cohorts, or DeepPhe-CR for cancer registry applications and registrar workflows.
+The currently-maintained primary software product is **DeepPhe Translational**, used for conducting translational studies and generating research cohorts. 
+A second software product is **DeepPhe-CR**, which was developed for cancer registry applications and registrar workflows.
