@@ -5,7 +5,7 @@ imagesource: "https://www.brandeis.edu/graduate-affairs/news-events/stories/2025
 jobtitle: "NLP Data Scientist"
 summary: "NLP data scientist who contributes to DeepPhe methods for extracting cancer treatment events and timelines from clinical text."
 institution: "Boston Children's Hospital"
-institutionurl: "https://www.childrenshospital.org"
+institutionurl: "https://www.chip.org/"
 profileurl: "https://www.brandeis.edu/graduate-affairs/news-events/stories/2025/cl-alums.html"
 group: "contributors"
 listed: false
