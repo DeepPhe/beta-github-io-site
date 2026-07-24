@@ -2,9 +2,9 @@ products:
   - id: xn
     name: "DeepPhe Translational"
     audience: "Research and translational studies"
-    choice_blurb: "Install DeepPhe Translational for translational workflows and cohort discovery."
+    choice_blurb: "Install DeepPhe Translational software tools for translational workflows and cohort discovery."
     blurb: "For translational studies, research cohorts, and visual review of extracted cancer phenotypes."
-    note: "The Installers include all tools for the default DeepPhe Translational workflow, from NLP Summarization to Visualization."
+    note: "The Installers will download and set up everything required to run the default DeepPhe Translational workflow, from NLP Summarization to Visualization."
     more_label: "Individual tools, examples, and source code"
     more_blurb: "Open this section when you need individual components, sample data, or source code instead of the standard installation."
     info_url: "https://github.com/DeepPhe/DeepPhe-Release/wiki"
@@ -109,10 +109,10 @@ products:
   - id: cr
     name: "DeepPhe-CR"
     audience: "Cancer registry workflows"
-    choice_blurb: "Get the final release for cancer registry applications."
+    choice_blurb: "Get the final source code release for cancer registry applications."
     blurb: "For registrar case abstraction, cancer registry workflows, and integration with registry systems."
     note: "This is the final DeepPhe-CR software release."
-    info_url: "https://github.com/DeepPhe/DeepPhe-CR-Release/wiki"
+    info_url: "https://github.com/DeepPhe/DeepPhe-CR-Release/tree/main#deepphe-stream-multi-container-stack---release-branch"
     groups:
       - label: "DeepPhe-CR source code"
         kicker: "Final release"
