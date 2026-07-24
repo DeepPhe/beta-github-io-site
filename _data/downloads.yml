@@ -2,16 +2,16 @@ products:
   - id: xn
     name: "DeepPhe Translational"
     audience: "Research and translational studies"
-    choice_blurb: "Install DeepPhe for research cohorts and translational workflows."
+    choice_blurb: "Install DeepPhe Translational for translational workflows and cohort discovery."
     blurb: "For translational studies, research cohorts, and visual review of extracted cancer phenotypes."
-    note: "The installers include the DeepPhe Translational NLP Summarizer and the DeepPhe Visualizer."
-    more_label: "Tools, examples, and source code"
-    more_blurb: "Open this section when you need individual components, sample data, or source archives."
+    note: "The Installers include all tools for the default DeepPhe Translational workflow, from NLP Summarization to Visualization."
+    more_label: "Individual tools, examples, and source code"
+    more_blurb: "Open this section when you need individual components, sample data, or source code instead of the standard installation."
     info_url: "https://github.com/DeepPhe/DeepPhe-Release/wiki"
     groups:
       - label: "Installers"
         kicker: "Recommended"
-        description: "Choose your operating system to install the complete research software."
+        description: "Choose your operating system to install the complete research software tool collection."
         featured: true
         version: "7.1"
         built: "2026-07-13"
@@ -28,30 +28,30 @@ products:
             title: "Linux installer"
             file: "DeepPhe_linux-x64-7.1.sh"
             url: "https://github.com/DeepPhe/DeepPhe-Dist/releases/download/deepphe-installer-7.1/DeepPhe_linux-x64-7.1.sh"
-      - label: "Examples"
-        description: "Sample files for trying the DeepPhe Translational workflow."
+      - label: "Example Cohort"
+        description: "Sample files for trying the DeepPhe Translational workflow, including clinical notes and an OMOP database for fake patients."
         version: "7.1"
         built: "2026-07-08"
         assets:
           - platform: zip
-            title: "Examples package"
+            title: "Example cohort package"
             file: "DeepPhe-examples.zip"
             url: "https://github.com/DeepPhe/DeepPhe-Dist/releases/download/dphe-examples-7.1/DeepPhe-examples.zip"
       - label: "DeepPhe Translational source code"
-        description: "Source archives for the DeepPhe Translational release."
+        description: "Source code bundle for the DeepPhe Translational release."
         version: "xn0.7.1"
         built: "2026-07-22"
         assets:
           - platform: zip
-            title: "ZIP archive"
+            title: "ZIP package"
             file: "xn0.7.1.zip"
             url: "https://github.com/DeepPhe/DeepPhe-Release/archive/refs/tags/xn0.7.1.zip"
           - platform: targz
-            title: "tar.gz archive"
+            title: "tar.gz package"
             file: "xn0.7.1.tar.gz"
             url: "https://github.com/DeepPhe/DeepPhe-Release/archive/refs/tags/xn0.7.1.tar.gz"
-      - label: "DeepPhe DB Pipeline"
-        description: "Load DeepPhe results into the database used by the Data API and Visualizer."
+      - label: "DeepPhe Visualizer Database Creator"
+        description: "Tool to load DeepPhe results and OMOP tables into the database used by the Data API and Visualizer."
         version: "7.1"
         built: "2026-07-08"
         assets:
@@ -71,8 +71,8 @@ products:
             title: "Linux"
             file: "DeepPheVizDbCreator-linux-x86_64"
             url: "https://github.com/DeepPhe/DeepPhe-Dist/releases/download/dphe-db-pipeline-7.1/DeepPheVizDbCreator-linux-x86_64"
-      - label: "DeepPhe Data API"
-        description: "Serve database content to the DeepPhe Visualizer and other applications."
+      - label: "DeepPhe Database Service"
+        description: "Serve database content from the DeepPhe Visualizer Database Creator to the DeepPhe Visualizer and other applications."
         version: "7.1"
         built: "2026-07-08"
         assets:
@@ -93,39 +93,39 @@ products:
             file: "dphe-data-api-linux-x64"
             url: "https://github.com/DeepPhe/DeepPhe-Dist/releases/download/dphe-data-api-7.1/dphe-data-api-linux-x64"
       - label: "DeepPhe Visualizer source code"
-        description: "Source archives for the Visualizer 2 release."
+        description: "Source code bundle for the DeepPhe Visualizer."
         version: "7.1"
         built: "2026-07-14"
         assets:
           - platform: zip
-            title: "ZIP archive"
+            title: "ZIP package"
             file: "v0.7.1.zip"
             url: "https://github.com/DeepPhe/DeepPhe-Visualizer-v2/archive/refs/tags/v0.7.1.zip"
           - platform: targz
-            title: "tar.gz archive"
+            title: "tar.gz package"
             file: "v0.7.1.tar.gz"
             url: "https://github.com/DeepPhe/DeepPhe-Visualizer-v2/archive/refs/tags/v0.7.1.tar.gz"
 
   - id: cr
     name: "DeepPhe-CR"
     audience: "Cancer registry workflows"
-    choice_blurb: "Get the final release for registrar and registry applications."
+    choice_blurb: "Get the final release for cancer registry applications."
     blurb: "For registrar case abstraction, cancer registry workflows, and integration with registry systems."
     note: "This is the final DeepPhe-CR software release."
     info_url: "https://github.com/DeepPhe/DeepPhe-CR-Release/wiki"
     groups:
-      - label: "DeepPhe-CR Final release"
+      - label: "DeepPhe-CR source code"
         kicker: "Final release"
-        description: "Choose the source archive format you prefer."
+        description: "2023 source code. Build and installation is required."
         featured: true
         version: "v0.4.0-cr"
         built: "2023-05-10"
         assets:
           - platform: zip
-            title: "ZIP archive"
+            title: "ZIP package"
             file: "v0.4.0-cr.zip"
             url: "https://github.com/DeepPhe/DeepPhe-CR-Release/releases/download/v0.4.0-cr/v0.4.0-cr.zip"
           - platform: tarz
-            title: "tar.z archive"
+            title: "tar.z package"
             file: "v0.4.0-cr.tar.z"
             url: "https://github.com/DeepPhe/DeepPhe-CR-Release/releases/download/v0.4.0-cr/v0.4.0-cr.tar.z"
