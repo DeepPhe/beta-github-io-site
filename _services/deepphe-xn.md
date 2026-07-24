@@ -6,9 +6,9 @@ weight: 2
 layout: service
 ---
 
-DeepPhe Translational is the DeepPhe software suite for translational studies. 
+DeepPhe Translational is the DeepPhe software suite for translational studies and research cohort discovery. 
 It provides extensive information useful for translational cancer research. 
-Results from processing can be stored in a SQLite database that can be utilized by DeepPhe Visualizer.
+Results from processing clinical documents can be stored in a SQLite database that can be utilized (in conjunction with OMOP tables) by the DeepPhe Visualizer.
 
 The DeepPhe Translational NLP Patient Summarizer is a highly-modifiable pipeline that can extract values for cancer and tumor attributes such as:
 - Diagnosis
@@ -17,17 +17,29 @@ The DeepPhe Translational NLP Patient Summarizer is a highly-modifiable pipeline
 - Summary Stage
 - Grade
 
-The DeepPhe Translational NLP Patient Summarizer can also identify biomarkers, medications, procedures, and comorbidities.
+The DeepPhe Translational NLP Patient Summarizer can also identify cancer-related concepts such as:
+- Biomarkers
+- Medications
+- Procedures
+- Comorbidities
+- Genes
 
 A DeepPhe Translational pipeline can be configured to report minimum, maximum and confidence-thresholded discoveries, 
-as well as output discoveries in a variety of formats. 
+as well as output selected discoveries in a variety of file formats such as CSV tables and JSON files. 
 The pipeline can be resized to accommodate smaller projects, and custom engines can be added to perform additional operations, 
-such as parsing institution-specific metadata in document headers.  
-For work on refined workflows or custom operations, contact the DeepPhe team.
+such as parsing institution-specific metadata in document headers or writing extracted information to new output formats.  
+Use of the default pipeline is simple, but the default pipeline may not be best for your data or use case. 
+Customization is highly recommended. For work on refined workflows or custom operations, contact the DeepPhe team.
 
-There is a [DeepPhe-XN wiki](https://github.com/DeepPhe/DeepPhe-Release/wiki) with information on use of the NLP Patient Summarizer software.
+| DeepPhe Translational Software | Help Documentation |
+|--------------------------------| ------------------ |
+| Installer GUI                  | [Installation Guide](https://deepphe.github.io/installation/) |
+| Desktop GUI                    | [Desktop GUI Guide](https://deepphe.github.io/dphe-gui/) |
+| NLP Patient Summarizer         | [DeepPhe-XN wiki](https://github.com/DeepPhe/DeepPhe-Release/wiki) |
+| Visualizer Database Creator    | [DeepPhe DB Pipeline Guide](https://deepphe.github.io/dphe-db-pipeline/) |
+| Database Service | [DeepPhe Data API](https://deepphe.github.io/dphe-data-api/) |
+| Vizualizer GUI | [DeepPhe Visualizer User Guide](https://deepphe.github.io/DeepPhe-Visualizer-v2/) |
 
-Documentation: [DeepPhe Installation Guide](https://deepphe.github.io/installation/), [DeepPhe Desktop GUI Guide](https://deepphe.github.io/dphe-gui/), and [DeepPhe DB Pipeline Guide](https://deepphe.github.io/dphe-db-pipeline/) for loading DeepPhe-XN output into the database.
 
 Supported by the [National Cancer Institute's](https://www.cancer.gov)
 [Information Technology for Cancer Research (ITCR) initiative](https://itcr.cancer.gov)
